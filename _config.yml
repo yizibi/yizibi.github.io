@@ -1,8 +1,7 @@
 # Basic
-title: Lucy_李的网上之家
-subtitle: 似水之心,人生若只如初见
-welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
-description: 嗨,我是李露鑫,你可以叫我Lucy,Welcome to visit the home of my online,best wishes foe you,thank you.
+title: Lucy网上之家
+subtitle: 似水之心,人生只如初见
+description: Hi!I’m Lucy,live in ShangHai temporaryly,Welcome to visit the home of my online,best wishes for you,thank you.
 creator: <a href=“https://github.com/lucyios”>@lucyios</a>
 
 url: "http://vno.onevcat.com"
@@ -20,8 +19,8 @@ cover_color: red
 
 # The blog button should not be removed.
 blog_button:
-    title: Blog
-    description: Visit blog
+    title: 博客
+    description: 访问博客
 
 # Navigation buttons in the front page.
 nav:
@@ -40,7 +39,6 @@ comment:
     
 # Social
 social:
-    weibo: 你永远那么年轻
     github: lucyios
     gplus: 107108267983477358170
     mail: liluxinios@gmail.com
