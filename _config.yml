@@ -1,9 +1,9 @@
 # Basic
-title: Vno Jekyll
-subtitle: A blog-orientation theme for Jekyll
+title: Lucy_李的网上之家
+subtitle: 似水之心,人生若只如初见
 welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
-description: Vno Jekyll is a port of my Ghost theme vno.
-creator: <a href="http://onev.cat">@onevcat</a>
+description: 嗨,我是李露鑫,你可以叫我Lucy,Welcome to visit the home of my online,best wishes foe you,thank you.
+creator: <a href=“https://github.com/lucyios”>@lucyios</a>
 
 url: "http://vno.onevcat.com"
 
@@ -25,7 +25,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    # - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
@@ -40,11 +40,10 @@ comment:
     
 # Social
 social:
-    weibo: onevcat
-    github: onevcat
-    twitter: onevcat
+    weibo: 你永远那么年轻
+    github: lucyios
     gplus: 107108267983477358170
-    mail: onev@onevcat.com
+    mail: liluxinios@gmail.com
 
 # Google Analytics
 ga:
