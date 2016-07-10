@@ -53,7 +53,7 @@ date: 2016-05-20 18:32:24.000000000 +09:00
 #### 2.2消息机制的原理
 
 * 消息机制原理:对象根据方法编号SEL去映射表查找对应的方法实现
-	*	![](../assets/images/Snip20151013_4.png)
+	*	![](http://o9zpq25pv.bkt.clouddn.com/Snip20151013_4.png)
 
 ### 三.runtime的应用
 
@@ -208,11 +208,11 @@ unsigned int count;
 
 * 交换原理：
 	* 交换之前：
-	![](../assets/images/Snip20151013_2.png)
+	![](http://o9zpq25pv.bkt.clouddn.com/Snip20151013_2.png)
 
 	
 	* 交换之后：
-	![](../assets/images/Snip20151013_3.png)
+	![](http://o9zpq25pv.bkt.clouddn.com/Snip20151013_3.png)
 	
 
 #### 3.4动态添加方法
@@ -536,7 +536,9 @@ void eat(id self,SEL sel)
 
 ```
 参考文章:
+
 [iOS~runtime理解](http://www.jianshu.com/p/927c8384855a);
+
 [iOS中的runtime应用](http://www.jianshu.com/p/364eab29f4f5);
 
 
