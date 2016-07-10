@@ -9,8 +9,8 @@ url: "http://vno.onevcat.com”
 permalink: /:year/:month/:title/
 
 # Format
-highlighter: plain
-markdown: redcarpet
+highlighter: rouge
+kramdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
 
