@@ -28,6 +28,7 @@ Error Domain=com.alamofire.error.serialization.response Code=-1011 "Request fail
 NSLocalizedDescription=Request failed: unsupported media type (415)
 
 ```
+
 #### ?为什么会出现这种报错呢?
 关于网络请求的接口,通常的做法是,利用第三方AFNetworking,这个强大的网络请求库,再此基础上,将项目中每个模块所用到的接口,进行一次简单的封装,这样,每个模块中的接口都是一类,便于调用,管理,维护...
 
@@ -35,7 +36,7 @@ NSLocalizedDescription=Request failed: unsupported media type (415)
 
 以下为尝试的解决方法:
 	
-> 1>修改AFNetworking内部,这个文件AFURLResponseSerialization.m中修改代码就能解决：第223行,初始化时,将如下代码:
+* 1>修改AFNetworking内部,这个文件AFURLResponseSerialization.m中修改代码就能解决：第223行,初始化时,将如下代码:
 
 	```
 	 self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", nil nil]; 
@@ -45,7 +46,7 @@ NSLocalizedDescription=Request failed: unsupported media type (415)
 	
  结果,运行,然并卵,我不否认,可能可以解决某些人遇到的问题,说是AFNetworking不支持以"text/html"格式的"content-type",反正我是添加了,没啥用;
  
- > 2> 在创建请求管理者(manger)是,做一些设置,其实本质上同第一种的解决方法是一样的,给AFNetworking添加一种支持的"text/html"格式,没什么用,还是报错,要不报400错;
+* 2> 在创建请求管理者(manger)是,做一些设置,其实本质上同第一种的解决方法是一样的,给AFNetworking添加一种支持的"text/html"格式,没什么用,还是报错,要不报400错;
  
   ```
   
@@ -78,7 +79,7 @@ NSLocalizedDescription=Request failed: unsupported media type (415)
  ```
  
  
- > 3>为了解决这个问题,单开一个项目,专门解决这个报错,由于java后台支持json数据格式传输,支持"application/json"格式的"content-type",后来在对请求数据格式和响应数据格式初始化的时候,将之前的父类换成了它的子类(AFJSONRequestSerializer);x-code7.3不提示(AFJSONRequestSerializer这个类),只有copy了,如下:
+* 3>为了解决这个问题,单开一个项目,专门解决这个报错,由于java后台支持json数据格式传输,支持"application/json"格式的"content-type",后来在对请求数据格式和响应数据格式初始化的时候,将之前的父类换成了它的子类(AFJSONRequestSerializer);x-code7.3不提示(AFJSONRequestSerializer这个类),只有copy了,如下:
  
  
  ```
