@@ -1,0 +1,105 @@
+---
+layout: post
+title: iOS中图片的圆角设置
+date: 2016-06-12 15:32:24.000000000 +09:00
+---
+
+> 在app中,关于图片的圆角应用非常广泛,比如,圆形头像的设置,图片四个角的圆角处理,显得比较圆滑,整体UI给人的感觉,圆角相对直角来说,给人一种温和的感觉,而不是那种有棱有角的感觉,最近遇到,需要处理一张图片左上角和右上角的圆角处理,也就是单独处理图片的任意一个直角的圆角化设置,利用CAShapeLayer处理任意一个直角的圆角设置;
+
+
+**最终结果:**
+
+
+![](http://o9zpq25pv.bkt.clouddn.com/blogcornersResults.png)
+
+### 一.app中的需求
+
+* __头像的圆形处理__
+
+![](http://o9zpq25pv.bkt.clouddn.com/blogcornersphoto01.png)
+
+* __图片的左上和右上圆角需求__
+
+![](http://o9zpq25pv.bkt.clouddn.com/blogcornersphoto.png)
+
+### 二.解决办法
+
+* 1.直接找UI切图,呵呵......
+
+* 2.设置layer,然后maskToBounds,即可,但是任意一个角,就处理不了了;
+
+* 3.CAShapeLayer设置path;
+
+#### 2.1 头像的圆角处理
+
+视图之所以能够显示,皆因为view中layer层,因此,头像的圆形设置就有两种方法
+
+* 第一种:
+
+通过设置layer的cornerRadius=width的一半,然后设置 masksToBounds = yes;
+
+* 第二种:
+
+利用drawInRect绘制一张新的圆形图片,这样不需要每次设置当前view的layer的圆角半径,具体如下:
+
+```
+- (instancetype)circleImage
+{
+    // 开启图形上下文
+    UIGraphicsBeginImageContext(self.size);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGRect rect = CGRectMake(0, 0, self.size.width, self.size.height);
+    CGContextAddEllipseInRect(ctx, rect);
+    CGContextClip(ctx);
+    [self drawInRect:rect];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+```
+
+#### 2.2 图片任意直角圆角化
+
+直接上代码
+
+```
+
+/**
+ *  返回一个任意圆角尺寸的view
+ *
+ *  @param corners     
+             枚举UIRectCornerTopLeft
+             UIRectCornerTopRight
+             UIRectCornerBottomLeft             
+             UIRectCornerBottomRight
+             UIRectCornerAllCorners
+ *  @param cornerRadii 圆角的尺寸(CGSize)
+ *
+ *  @return 返回一个任意圆角尺寸的view
+ */
++ (CAShapeLayer *)viewByRoundingCorners:(UIRectCorner)corners cornerRadii:(CGSize)cornerRadii currentView:(UIView *)view{
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:corners cornerRadii:cornerRadii];
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = view.bounds;
+    maskLayer.path = maskPath.CGPath;
+    return maskLayer;
+}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
