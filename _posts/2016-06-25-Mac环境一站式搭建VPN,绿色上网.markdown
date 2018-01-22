@@ -5,30 +5,32 @@ date: 2016-06-25 15:32:24.000000000 +09:00
 ---
 
 
+
+
 ### 写在前面
-作为一枚小小的程序猿,很多时候,由于度娘资源有限,满足不了我小小的愿望,而我也是一个不安分的程序猿,曾经一直使用Labtern(__蓝灯__),但是不稳定,速度也不怎么友好,后来通过Google了解到可以自己搭建VPS来实现自己科学上网的愿望，通过参考[史上最详尽Shadowsocks从零开始一站式翻墙教程](http://shadowsocks.blogspot.jp/2015/01/shadowsocks.html#gpluscomments),终于实现了科学绿色上网,少年,行动起来吧!
+作为一枚小小的程序猿,很多时候,由于度娘资源有限,满足不了我小小的愿望,而我也是一个不安分的程序猿,曾经一直使用Labtern(__蓝灯__),但是不稳定,速度也不怎么友好,后来通过Google了解到可以自己搭建VPS来实现自己科学上网的愿望，通过参考[史上最详尽Shadowsocks从零开始一站式翻墙教程][1],终于实现了科学绿色上网,少年,行动起来吧!
 
 
-![](http://img1.mydrivers.com/img/20150902/95577c728abc4cbeace7234da507c4b8.gif)
+![][image-1]
 
 
 
 **注意**:
 
-本片博客主要是在Mac下如何搭建个人VPN,windows或Linux的环境请参考[史上最详尽Shadowsocks从零开始一站式翻墙教程](http://shadowsocks.blogspot.jp/2015/01/shadowsocks.html#gpluscomments)
+本片博客主要是在Mac下如何搭建个人VPN,windows或Linux的环境请参考[史上最详尽Shadowsocks从零开始一站式翻墙教程][2]
 
 ## 搭建过程
 ### 一、准备工作
 
 * 1 购买服务器（VPS）
 * 2 ZOC终端利器
-* 3 自动化脚本 
+~~* 3 自动化脚本(已废弃) ~~
 * 4 配置参数
 
 ### 二、购买VPS
-查了一下资料，自己使用的搬瓦工[(BandwagonHOST)](https://bandwagonhost.com/index.php)，很稳定，配置好之后，可以给同事或者朋友开通账号，谁用谁知道！
+查了一下资料，自己使用的搬瓦工[(BandwagonHOST)][3]，很稳定，配置好之后，可以给同事或者朋友开通账号，谁用谁知道！
 
-![](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmPf2yc7uFYD9PUe5xJtF-AmvHu40XzLqgkmHws9sb524psj1-jw)
+![][image-2]
 
 ### 购买步骤
 **支持支付宝支付**
@@ -37,15 +39,15 @@ date: 2016-06-25 15:32:24.000000000 +09:00
 
 #### 2.1：选择套餐
 
-![](http://upload-images.jianshu.io/upload_images/224008-c7201fef27c42445?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![][image-3]
 
 #### 2.2：确认订单
 
-![](http://upload-images.jianshu.io/upload_images/224008-e7f53d71d9bce995?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![][image-4]
 
 #### 2.3：确认订单
 
-![](http://upload-images.jianshu.io/upload_images/224008-e7f53d71d9bce995?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![][image-5]
 
 #### 2.4：付款
 
@@ -54,15 +56,15 @@ date: 2016-06-25 15:32:24.000000000 +09:00
 订单信息如下图：
 
 
-![](http://upload-images.jianshu.io/upload_images/224008-209185785888d3f3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![][image-6]
 
-![](http://upload-images.jianshu.io/upload_images/224008-c3bceaaf3dc972e3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![][image-7]
 
-![](http://upload-images.jianshu.io/upload_images/224008-8f6a60207dcd6887?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![][image-8]
 
 基本上到这边，就完成VPS的购买了，接下来重点来了。。
 
-关于购买这一部分，也可参考[Mac下搭建Shadowsocks实现科学上网](http://www.jianshu.com/p/a6d9fbd8133c)
+关于购买这一部分，也可参考[Mac下搭建Shadowsocks实现科学上网][4]
 
 
 
@@ -70,24 +72,62 @@ date: 2016-06-25 15:32:24.000000000 +09:00
 
 ZOC其实跟终端差不多，但是比终端功能强大，可用于上传文件到VPS，具体界面如下，后面会用到，这个神器！
 
-[ZOC下载地址](http://www.emtec.com/download.html#zocfiles)
+[ZOC下载地址][5]
 
-![](http://i1-mac.softpedia-static.com/screenshots/ZOC_2.jpg)
+![][image-9]
 
-### 四、自动化脚本
+~~### 四、自动化脚本~~
 
-[下载地址](https://pan.baidu.com/s/1o8tT4jK)
+~~[下载地址]~~
 
-作用：用于自动化连接VPS，给他人开通账号；
+~~作用：用于自动化连接VPS，给他人开通账号；~~
+
+
+****************************  0122更新  由于之前的加密方式被封,VPS也到期,重新搭建了一下  **********************************
 
 ### 五、配置环境
 
-待续。。。。。
+#### 5.1 安装Shadowsocks客户端
+
+Shadowsocks客户端的[下载地址](https://shadowsocks.org/en/download/clients.html)，可以看到有各种客户端的下载。貌似这货也是得翻墙才能访问到。
+
+
+#### 5.2 Mac配置
+
+下载 Shadowsocks 完成后,按照如下步骤打开:
+
+![ss配置](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/WechatIMG47.jpeg)
+
+主要有四个地方要填，服务器的地址，端口号，加密方法，密码。服务器地址即为之前 Main controls 选项中的IP地址。端口号、加密方法、密码必须与之前 Shadowsocks Server 中的信息一一匹配，否则会连接失败。
+
+#### 5.3 手机配置
+
+App Store 搜索 SuperWingy,然后打开,添加配置:参数基本上跟电脑差不多,
+具体如下:
+![手机配置](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/google/WechatIMG48.jpeg)
+
+
+
+[参考文章]
+1. [史上最详尽Shadowsocks从零开始一站式翻墙教程][1];
+2. [写给非专业人士看的 Shadowsocks 简介](https://vc2tea.com/whats-shadowsocks/);
+3. [搬瓦工+shadowsocks：搭建自己的VPN服务器](https://moshuqi.github.io/2017/07/20/%E8%87%AA%E5%B7%B1%E6%90%AD%E5%BB%BAVPN%E6%9C%8D%E5%8A%A1%E5%99%A8/#mac%E9%85%8D%E7%BD%AE);
 
 
 
 
+[1]:	http://shadowsocks.blogspot.jp/2015/01/shadowsocks.html#gpluscomments
+[2]:	http://shadowsocks.blogspot.jp/2015/01/shadowsocks.html#gpluscomments
+[3]:	https://bandwagonhost.com/index.php
+[4]:	http://www.jianshu.com/p/a6d9fbd8133c
+[5]:	http://www.emtec.com/download.html#zocfiles
 
-
-
-
+[image-1]:	http://o9zpq25pv.bkt.clouddn.com/lucyBlog/google/22.jpg
+[image-2]:	https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmPf2yc7uFYD9PUe5xJtF-AmvHu40XzLqgkmHws9sb524psj1-jw
+[image-3]:	http://upload-images.jianshu.io/upload_images/224008-c7201fef27c42445?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+[image-4]:	http://upload-images.jianshu.io/upload_images/224008-e7f53d71d9bce995?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+[image-5]:	http://upload-images.jianshu.io/upload_images/224008-e7f53d71d9bce995?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+[image-6]:	http://upload-images.jianshu.io/upload_images/224008-209185785888d3f3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+[image-7]:	http://upload-images.jianshu.io/upload_images/224008-c3bceaaf3dc972e3?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+[image-8]:	http://upload-images.jianshu.io/upload_images/224008-8f6a60207dcd6887?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+[image-9]:	http://i1-mac.softpedia-static.com/screenshots/ZOC_2.jpg
