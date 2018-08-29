@@ -14,11 +14,4 @@ title: 关于我
 平时喜欢整理个人博客，逛逛技术论坛,喜欢摄影。
 <p>
 
-<p>
-这个是我
-<p>
-
-<br>
-
-![It's Me](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/WechatIMG1766.jpg)
 
