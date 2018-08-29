@@ -14,12 +14,5 @@ title: 关于我
 平时喜欢整理个人博客，逛逛技术论坛,喜欢摄影。
 <p>
 
-<h3> 主题 </h3>  
-
-<p>
-
-是的，这个主题,是偶然间想换一个主题,就看中了这个模板,整个模板可以在:[这里](https://github.com/lucyios/lucyios.github.io)下载;
-
-<p>
-
+![It's Me](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/WechatIMG1766.jpg)
 
