@@ -18,7 +18,7 @@ title: 关于我
 
 <p>
 
-是的，这个主题,是偶然间想换一个主题,就看中了这个模板,整个模板可以在[这里](https://github.com/lucyios/lucyios.github.io)下载;
+是的，这个主题,是偶然间想换一个主题,就看中了这个模板,整个模板可以在:[这里](https://github.com/lucyios/lucyios.github.io)下载;
 
 <p>
 
