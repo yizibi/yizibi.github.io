@@ -1,16 +1,43 @@
-# Vno - Jekyll
+# leopard
 
-### 个人记录工作常用小站
+[leopard](https://lucyios.github.io/) 是一个简洁的博客模板，如果你也喜欢请 Star ，你的 Star 是我持续更新的动力, 谢谢 😄.
+
+### 使用手册
+
+[模板来自这个家伙](https://github.com/leopardpan)
+
+### 使用条件
+
+Jekyll 支持 Mac 、Windows、ubuntu 、Linux 操作系统                     
+Jekyll 需要依赖：Ruby、bundler
 
 
-[Vno Jekyll](https://github.com/onevcat/vno-jekyll) is a theme for [Jekyll](http://jekyllrb.com). It is a port of my Ghost theme [vno](https://lucyios.github.io/), which is originally developed from [Dale Anthony's Uno](https://github.com/daleanthony/uno).
+#### 安装Jekyll
 
-## Live Demo
+[Jekyll中文官方文档](http://jekyll.bootcss.com/) ， 如果你已经安装过了 Jekyll，可以忽略此处。
 
-See [Vno - Jekyll](https://lucyios.github.io/) site and [my blog](https://lucyios.github.io/).
+> $ gem install jekyll
 
-You can also find some instruction as well as other sites using Vno theme in [this page](http://vno.onevcat.com/2016/02/hello-world-vno/).
 
-## Licence
+> $ jekyll server
 
-Great thanks to [Dale Anthony](https://github.com/daleanthony) and his [Uno](https://github.com/daleanthony/uno). Vno Jekyll is based on Uno, and contains a lot of modification on page layout, animation, font and some more things I can not remember. Vno Jekyll is followed with Uno and be licensed as [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/). See the link for more information.
+在浏览器输入 [127.0.0.1:4000](127.0.0.1:4000) ， 就可以看到博客效果了。
+
+
+### 提示
+
+>* 如果你想使用我的模板，请把 _posts/ 目录下的文章都去掉。
+>* 修改 _config.yml 文件里面的内容为你自己的个人信息。
+
+如果在部署博客的时候发现问题，可以直接在[Issues](https://lucyios.github.io/issues)里面提问。        
+
+
+### 把这个博客变成你自己的博客
+
+根据上面【提示】修改过后，在你的github里创建一个username.github.io的仓库，username指的值你的github的用户名。      
+创建完成后，把我的这个模板使用git push到你的username.github.io仓库下就行了。
+
+
+#### 感谢   
+
+本博客在[Vno Jekyll](https://github.com/onevcat/vno-jekyll)基础上修改的。  

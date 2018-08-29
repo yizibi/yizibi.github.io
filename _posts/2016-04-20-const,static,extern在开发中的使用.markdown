@@ -2,6 +2,8 @@
 layout: post
 title: const,static,extern在开发中的使用
 date: 2016-04-20 15:32:24.000000000 +09:00
+tag: iOS技术
+
 ---
 
 ### 一、const与宏的区别:
