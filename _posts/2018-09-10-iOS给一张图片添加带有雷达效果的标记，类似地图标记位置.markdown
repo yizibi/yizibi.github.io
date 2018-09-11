@@ -86,4 +86,4 @@ return newImage;
 
 [iOS动画-扩散波纹效果](http://www.cocoachina.com/ios/20180327/22778.html)
 
-[图片预览库WMPhotoBrowser]()
+[图片预览库WMPhotoBrowser](https://github.com/zhengwenming/WMPhotoBrowser)
