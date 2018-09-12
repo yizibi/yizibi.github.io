@@ -52,7 +52,7 @@ NSLocalizedDescription=Request failed: unsupported media type (415)
   
   1.创建一个请求管理者
   
-  ```
+    ```
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
       //初始化响应者
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
@@ -77,12 +77,14 @@ NSLocalizedDescription=Request failed: unsupported media type (415)
         }
     }];
     
- ```
+    ``` 
+    
  
  
-* 3>为了解决这个问题,单开一个项目,专门解决这个报错,由于java后台支持json数据格式传输,支持"application/json"格式的"content-type",后来在对请求数据格式和响应数据格式初始化的时候,将之前的父类换成了它的子类(AFJSONRequestSerializer);x-code7.3不提示(AFJSONRequestSerializer这个类),只有copy了,如下:
+*  3> 为了解决这个问题,单开一个项目,专门解决这个报错,由于java后台支持json数据格式传输,支持"application/json"格式的"content-type",后来在对请求数据格式和响应数据格式初始化的时候,将之前的父类换成了它的子类(AFJSONRequestSerializer);x-code7.3不提示(AFJSONRequestSerializer这个类),只有copy了,如下:
  
- ```
+ 
+    ```
  //初始化响应者
 //    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
 //    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -109,7 +111,7 @@ AFJSONRequestSerializer 继承自AFHTTPRequestSerializer,不过参数的编码�
 }
 
 
-```
+    ```
 
 > 至此,问题终于解决,到此,也只能怪自己学艺不精,吃一堑,长一智,慢慢积累吧,写给自己吧~~~
 
