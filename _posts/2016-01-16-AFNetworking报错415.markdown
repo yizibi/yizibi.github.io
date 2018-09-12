@@ -116,4 +116,4 @@ AFJSONRequestSerializer 继承自AFHTTPRequestSerializer,不过参数的编码�
 > 至此,问题终于解决,到此,也只能怪自己学艺不精,吃一堑,长一智,慢慢积累吧,写给自己吧~~~
 
 <br>
-转载请注明：[潘柏信的博客](https://lucyios.github.io/) » AFNetworking报错:(415...)](https://lucyios.github.io/2016/05/AFNetworking%E6%8A%A5%E9%94%99415/)  
+转载请注明：[李露鑫的博客](https://lucyios.github.io/) [AFNetworking报错:(415...)](https://lucyios.github.io/2016/05/AFNetworking%E6%8A%A5%E9%94%99415/)  
