@@ -7,9 +7,6 @@ title: 关于我
 
 <p>
 
-欢迎关注我们的公众号:
-![](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/daoshegnkeji.png)
-
 <p>
 其次,我是一个 iOS coder，喜欢研究一些新技术,致力于 自由职业者;
 <p>
