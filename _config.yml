@@ -1,12 +1,12 @@
 # Basic
-title: 玉米棒
+title: 一之笔
 subtitle: 个人站
 description: 欢迎来到我的个人站~
 # 头像里面的标题
-avatarTitle: Lee
+avatarTitle: 一之笔
 # 头像里面的描述
 avatarDesc: LoT iOS 
-url: "https://lucyios.github.io/"
+url: "https://yizibi.github.io/"
 
 # Comment
 comment:
@@ -16,7 +16,7 @@ comment:
 # Social
 social:
     weibo: 2524618644 
-    github: lucyios
+    github: yizibbi
     # twitter: 
     mail: liluxinios@163.com
 
@@ -36,7 +36,7 @@ ga:
 #
 #
 #  _post/ 下的文章更换成你自己的文章
-#  帮忙star一下，感谢~😆 地址：https://github.com/lucyios/lucyios.github.io
+#  帮忙star一下，感谢~😆 地址：https://github.com/yizibi/lucyios.github.io
 #
 #
 # 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
