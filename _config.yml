@@ -13,7 +13,7 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     你永远那么年轻
+weibo_username:     2524618644
 zhihu_username:     李林飞
 github_username:    yizibi
 #twitter_username:   huxpro
@@ -103,37 +103,13 @@ page-mathjax: false
 # Friends
 friends: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
+    #     title: "冰霜之地 ",
+    #     href: "https://halfrost.com/"
     # },{
-        title: "乱序",
-        href: "http://mida.re/"
+        title: "冰霜之地",
+        href: "https://halfrost.com/"
     },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "David's Game",
-        href: "https://www.ruoyaowu.com/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
-    }
+	title: "大神",
+	href: "https://casatwy.com/category/blog.html"
+	}
 ]
