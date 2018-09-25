@@ -1,0 +1,95 @@
+---
+layout:     post
+title:    "iOS给一张图片添加带有雷达效果的标记，类似地图标记位置"
+subtitle:   "iOS 动效 标记"
+date: 2018-08-14 15:32:24.000000000 +09:00
+author:     "一之笔"
+header-img: "img/home-bg-o.jpg"
+tags:
+- iOS技术
+- iOS动画
+---
+
+引言
+
+> 在实际开发过程中，往往有这样一种场景，比如，某一个地方需要添加一个标记，这个标记要足够醒目，一眼就可以让用户知道，标记的地方在哪里，就像百度地图或者谷歌地图里面的，用来标记用户位置的标记，以一种“雷达”效果，或者说“水波”效果，动态闪烁，引起用户的注意，并且，背景图片是可以放大的；
+
+
+以上就是我们产品的需求，以下就是最终的实现效果；
+
+![报警点展示](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/image.gif)
+
+> [点击获取Demo](https://github.com/lucyios/CustomeUILib)
+
+### 可行性
+
+* 在一张图片上添加一个==雷达效果==的一个标记，首先需要给图片添加标记，然后想办法在标记的地方(Point)，add 一个View;可行
+
+### 需求分析
+
+* 在一张已知的背景图上画一个标记，我首先想到的是，图片水印；
+
+事实也就是那么回事，水印是在原有的图片添加另外一张图片，标记仅仅是一个纯色的图片而已
+
+* 在标记的位置点，添加一个显示动画的View；
+
+### 技术点
+
+* 添加标记
+
+根据颜色生成一张图片，然后将生成的图片，绘制到背景图片上,具体需要用到 
+
+> drawInrect：在哪里绘制图片
+
+* 关键代码
+
+```
+
++ (instancetype)imageWithColor:(UIColor *)color
+{
+CGRect rect = CGRectMake(0.0f, 0.0f, 10.0f, 10.0f);
+UIGraphicsBeginImageContext(rect.size);
+CGContextRef context = UIGraphicsGetCurrentContext();
+CGContextSetFillColorWithColor(context, [color CGColor]);
+CGContextFillRect(context, rect);
+UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+UIGraphicsEndImageContext();
+return theImage;
+}
+
+// 给图片添加标记
++ (UIImage *)imageWithOriginalName:(UIImage *)image signColor:(UIColor *)signColor signPositionX:(double)positionX ignPositionY:(double)positionY {
+
+//1.获取图片
+UIImage *signalImage = [[UIImage imageWithColor:signColor] circleImag];
+//2.开启上下文
+UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
+//3.绘制背景图片
+[image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+//绘制标记图片到当前上下文
+CGFloat signX = positionX * image.size.width;
+CGFloat signY = positionY * image.size.height;
+
+CGRect rect = CGRectMake(signX, signY, 40, 40);
+[signalImage drawInRect:rect];
+//4.从上下文中获取新图片
+UIImage * newImage = UIGraphicsGetImageFromCurrentImageContext();
+//5.关闭图形上下文
+UIGraphicsEndImageContext();
+//返回图片
+return newImage;
+}
+
+
+```
+* 定点位置，雷达动画的添加
+
+具体实现可以参考文章，基本原理就是，将单一动画利用循环，创建多次，组成动画组，依次添加，就可以实现最终的效果了；
+
+
+
+[感谢]
+
+[iOS动画-扩散波纹效果](http://www.cocoachina.com/ios/20180327/22778.html)
+
+[图片预览库WMPhotoBrowser](https://github.com/zhengwenming/WMPhotoBrowser)

@@ -1,0 +1,35 @@
+---
+layout:     post
+title:    "iOS 设置textView的行间距及字体大小"
+subtitle:   "行间距及字体大小"
+date: 2016-03-30 10:32:24.000000000 +09:00
+author:     "一之笔"
+header-img: "img/home-bg-o.jpg"
+tags:
+- iOS技术
+---
+
+> 开发中,富文本的运用,很常见,诸如字体间距,颜色,大小等,而且在动态给控件赋值的时候,之前静态设置的一些属性,动态仅仅赋值就没用了,需要在设置模型的时候.重新添加属性;
+
+
+* 设置行间距及字体大小
+
+```
+  // 调整行间距
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineSpacing:8];
+    NSDictionary *attributes = @{
+                                 NSFontAttributeName:[UIFont systemFontOfSize:16],
+                                 NSParagraphStyleAttributeName:paragraphStyle
+                                 };
+    _midContextLab.attributedText = [[NSAttributedString alloc] initWithString:text attributes:attributes];
+    
+
+```
+
+
+
+
+
+
+

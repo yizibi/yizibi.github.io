@@ -1,0 +1,133 @@
+---
+layout:     post
+title:    "OC-定时器初探"
+subtitle:   "定时器你都知道吗"
+date: 2016-03-16 10:32:24.000000000 +09:00
+author:     "一之笔"
+header-img: "img/home-bg-o.jpg"
+tags:
+- iOS技术
+---
+
+> 在开发中,有时候,我们会用到定时器,像获取验证码倒计时,语音播放倒计时,又或者循环展示某一个广告之类的等等,都会用到计时器,在iOS中,常用的定时器有两种GCD,NSTimer,还有一种不常用的CADisplayLink,都在此总结一下,实际开发中,还是选择自己熟悉的定时器.
+
+
+## 定时器之---NSTimer
+
+### NSTimer常用的两种创建方法
+
+```
+/**
+ *  创建定时器
+ *  @param ti        定时器间隔时间
+ *  @param aTarget   监听对象(一般为self)
+ *  @param aSelector 定时器执行方法
+ *  @param userInfo  定时器传递的信息,可传nil
+ *  @param yesOrNo   是否重复
+ */
++ (NSTimer *)timerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(nullable id)userInfo repeats:(BOOL)yesOrNo;
++ (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)ti target:(id)aTarget selector:(SEL)aSelector userInfo:(nullable id)userInfo repeats:(BOOL)yesOrNo;
+
+```
+### 第一种方法
+
+通过timerWith...创建的定时器,必须注意,需要将定时器手动添加到当前的runloop中,否则定时器不会激发,并且要注意runloop的模式,关于runloop的模式,主要有`NSDefaultRunLoopMode`和`UITrackingRunLoopMode`,而这两种模式都被称为[通用模式]`NSRunLoopCommonModes`,可以通过NSLog打印当前模式,[NSRunloop currentRunloop],runloop的设定模式不同,定时器的作用就不同,具体如下:
+
+
+```
+//创建定时器
+ NSTimer *timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(show) userInfo:nil repeats:YES];
+//添加带runloop中,并且设定模式(默认模式,当用户进行交互的时候,定时器会停止工作)
+[[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+或者(追踪模式,通俗的说,就是当用户进行交互的时候,定时器不受影响)
+ [[NSRunLoop currentRunLoop] addTimer:timer forMode:UITrackingRunLoopMode];
+或者(通用模式)
+[[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+//当前runloop的打印结果
+  
+ NSRunLoopCommonModes:如果设置 Runloop 的模式为 Common 则被标记为 common 的模式,定时器都可以运行,而forMode:NSDefaultRunLoopMode和forMode:UITrackingRunLoopMode都被标记为 common    
+ common modes = <CFBasicHash 0x7f886b402720 [0x10bad07b0]>{type = mutable set, count = 2,        entries =>        
+0 : <CFString 0x10c95ba40 [0x10bad07b0]>{contents = "UITrackingRunLoopMode"}        
+2 : <CFString 0x10baf0b40 [0x10bad07b0]>{contents = "kCFRunLoopDefaultMode"}    }    
+
+```
+
+### 第二种方法
+
+通过scheduled...创建的定时器,系统会默认将定时器添加到默认的模式中,但是我们可以人为的修改定时器的运行模
+
+```
+NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(show) userInfo:nil repeats:YES];
+//更改模式
+[[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+
+```
+
+## 定时器之---GCD
+
+和NSTimer相比,GCD中的定时器,不受runloop模式的影响,使用起来,也比较方便,直接敲dispatch_source会有代码段提示,然后就是补充参数即可,但是需要注意:由于GCD创建的定时器会在block中有回调,所以一开始创建的定时器要被`强引用`,否则,一旦创建完,当回调block的时候,早都挂了,具体如下:
+
+```
+
+- (void)gcdTimer
+{
+    //0 获取一个全局的并发队列 
+   dispatch_queue_t queue = dispatch_get_global_queue(0, 0);  
+  //1. 定义一个定时器  
+  /*    
+    第一个参数:说明定时器的类型 
+    第四个参数:GCD的回调任务添加到那个队列中执行，如果是主队列则在主线程执行     */        
+dispatch_source_t  timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);  
+  //这里创建的 timer, 是一个局部变量,由于 Block 回调定时器,因此,必须保证 timer 被强引用;    self.timer = timer;   
+ dispatch_time_t startTime = dispatch_time(DISPATCH_TIME_NOW, 0 * NSEC_PER_SEC);    */   
+  
+ <#dispatch_source_t source#>:给哪个定时器设置时间   
+  <#dispatch_time_t start#>:定时器立即启动的开始时间   
+  <#uint64_t interval#>:定时器开始之后的间隔时间   
+  <#uint64_t leeway#>:定时器间隔时间的精准度,传入0代表最精准,尽量让定时器精准,注意: dispatch 的定时器接收的时间是 纳秒 
+    */  
+  uint64_t interval = 2.0 * NSEC_PER_SEC;   
+ //2设置定时器的相关参数:开始时间,间隔时间,精准度等  
+  dispatch_source_set_timer( timer, startTime, interval, 0 * NSEC_PER_SEC);  
+  //3.设置定时器的回调方法   
+ dispatch_source_set_event_handler(timer, ^{        
+            NSLog(@"%@",[NSThread currentThread]); 
+   });  
+  //4.开启定时器   
+ dispatch_resume(timer);
+}
+
+```
+
+## 定时器之---CADisplayLink
+
+#### CADisplayLink是什么?
+
+一个能让我们保证和屏幕刷新率同步的频率(通常情况下,iOS设备屏幕的刷新率60次/秒),将特定的内容画到屏幕上的定时器类,而不会想NSTimer出现屏幕卡顿现象。
+这个定时器一般不常用,这个主要用在快速刷新屏幕时,简单了解一下他的用法,这里还需要了解一下这个方法:setNeedsDisplay(重绘),系统底层会调用:`- (void)drawRect:(CGRect)rect`;需要注意的是:这个方法不是立马就进行重绘.它仅仅是设置了一个重绘标志,等到下一次屏幕刷新的时候才会调用DrawRect方法.
+CADisplayLink以特定模式添加到runloop后，每当屏幕显示内容刷新结束的时候，runloop就会向CADisplayLink指定的target发送一次指定的selector消息， CADisplayLink类对应的selector就会被调用一次。
+具体使用如下:
+
+```
+如何使用?
+-(void)viewDidLoad
+{    CADisplayLink *link = [CADisplayLink displayLinkWithTarget:self        selector:@selector(setNeedsDisplay)];   
+ [link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];    
+ }
+//重绘的方法
+//初始化frame
+static int _mdsY = 0;
+- (void)drawRect:(CGRect)rect 
+{
+//对需要绘制的对象进行修改
+    if(_mdsY > rect.size.height){      
+          _mdsY = 0;    
+     }    
+    UIImage *image = [UIImage imageNamed:@"MandarinTalk"];   
+    [image drawAtPoint:CGPointMake(0, _mdsY)];    
+    _mdsY += 10;
+}
+
+```
+
+#### 总的来说,OC中的定时器,就这么多,最常用的也就是前两种,但是具体使用哪种定时器,看个人自己了,有什么问题,非常欢迎!谢谢.
