@@ -23,11 +23,11 @@ tags:
 
 > [点击获取Demo](https://github.com/lucyios/CustomeUILib)
 
-## 可行性[spec1]
+## 可行性
 
 * 在一张图片上添加一个==雷达效果==的一个标记，首先需要给图片添加标记，然后想办法在标记的地方(Point)，add 一个View;可行
 
-## 需求分析[spec2]
+## 需求分析
 
 * 在一张已知的背景图上画一个标记，我首先想到的是，图片水印；
 
@@ -35,7 +35,7 @@ tags:
 
 * 在标记的位置点，添加一个显示动画的View；
 
-## 技术点[spec3]
+## 技术点
 
 * 添加标记
 
@@ -90,7 +90,7 @@ return newImage;
 
 
 
-## [感谢][spec4]
+## [感谢]
 
 [iOS动画-扩散波纹效果](http://www.cocoachina.com/ios/20180327/22778.html)
 
