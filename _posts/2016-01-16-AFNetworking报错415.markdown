@@ -1,8 +1,12 @@
 ---
-layout: post
-title: AFNetworking报错:(415...)
+layout:     post
+title:    "AFNetworking报错:(415...)"
+subtitle:   "AFN 415 Error"
 date: 2016-01-16 15:32:24.000000000 +09:00
-tag: iOS技术
+author:     "一之笔"
+header-img: "img/home-bg-o.jpg"
+tags:
+- iOS技术
 ---
 
 #### question

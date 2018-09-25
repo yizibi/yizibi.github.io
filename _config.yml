@@ -1,70 +1,139 @@
-# Basic
-title: 一之笔
-subtitle: 个人站
-description: 生活需要仪式感，💪
-# 头像里面的标题
-avatarTitle: Life
-# 头像里面的描述
-avatarDesc: LoT iOS 
-url: "https://yizibi.github.io/"
+# Site settings
+title: Yizibi Blog
+SEOTitle: 一之笔的博客 | Yizibi Blog
+header-img: img/home-bg.jpg
+email: liluxinios@gmail.com
+description: "iOS 开发 公司合伙人 | 李露鑫，iOS & Photography Lover，Software Engineer，Entrepreneur | 这里是 @Yizibbi 李露鑫 的个人博客， 生活需要仪式感，💪。"
+keyword: "李露鑫, Yizibi, iOS, 公司合伙人, @yizibi, @yizibi的博客, 博客, 个人网站, 互联网"
+url: "https://yizibi.github.io/"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
-# Comment
-comment:
-    disqus: Lucy
-    # uyan: 2143225  # 有言id,登录有言官网申请
+# Publish posts or collection documents with a future date.
+future: true
 
-# Social
-social:
-    weibo: 2524618644 
-    github: yizibi
-    # twitter: 
-    mail: liluxinios@163.com
+# SNS settings
+RSS: false
+weibo_username:     你永远那么年轻
+zhihu_username:     李林飞
+github_username:    yizibi
+#twitter_username:   huxpro
+#facebook_username:  huxpro
+#linkedin_username:  firstname-lastname-idxxxx
 
-# 百度统计 
-# 使用博客模板请去掉或者更换 id 
-# baidu:
-#   id: 8ba1c6be0953b6f9c2ba38e57f615421  
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN  
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
+
+# Disqus settings
+disqus_username: Lucy
+
+# Netease settings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: [your track id]
 
 # Google Analytics
-# 使用博客模板请去掉或者更换 id
-ga:
-    id: UA-124793396-1   
-    host: auto  
+ga_track_id: 'UA-124793396-1'            # Format: UA-xxxxxx-xx
+ga_domain: huangxuan.me
 
 
-# 《----------------- 上面的信息修改成你自己的 ---------------------------》
-#
-#
-#  _post/ 下的文章更换成你自己的文章
-#  帮忙star一下，感谢~😆 地址：https://github.com/yizibi/lucyios.github.io
-#
-#
-# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "For the next quantum leap<br>生活需要仪式感"
+sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
-permalink: /:year/:month/:title/
-# Format
-highlighter: rouge
 
-textColor: #FF0000
-
-# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: clear
-
-# The blog button should not be removed.
-blog_button:
-    title: 博客主页
-
-# Navigation buttons in the front page.s
-nav:
-    - {title: 所有文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}      
-    - {title: 关于我, description: about, url: '/about'}      
-    
-
-# Pagination
-gems: [jekyll-paginate,jekyll-sitemap]
-paginate: 20
-paginate_path: "page/:num/"
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: false
+
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+
+
+# Friends
+friends: [
+    {
+    #     title: "Su",
+    #     href: "http://su.gallery/"
+    # },{
+        title: "乱序",
+        href: "http://mida.re/"
+    },{
+        title: "前端外刊评论",
+        href: "http://qianduan.guru/"
+    },{
+        title: "天镶的博客",
+        href: "http://lingyu.wang/"
+    },{
+        title: "Luke 的自留地",
+        href: "http://hmqk1995.github.io"
+    },{
+        title: "Ebn's Blog",
+        href: "http://ebnbin.com/"
+    },{
+        title: "SmdCn's Blog",
+        href: "http://blog.smdcn.net"
+    },{
+        title: "David's Game",
+        href: "https://www.ruoyaowu.com/"
+    },{
+        title: "DHong Say",
+        href: "http://dhong.co"
+    },{
+        title: "尹峰以为",
+        href: "http://ingf.github.io/"
+    },{
+        title: "解旻的博客",
+        href: "http://xieminis.me/"
+    }
+]
