@@ -80,6 +80,8 @@
                     {% endif %}
                 </ul>
                 <p class="copyright text-muted">
+                  本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+                    <br>
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
                     Theme by <a href="https://github.com/EZLippi/EZLippi.github.io">Hux</a> |
@@ -91,20 +93,11 @@
                 </p>
             </div>
             
-            <div align="right">
-                <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
-                    
-                    <!-- 访问统计 -->
-                    <span id="busuanzi_container_site_pv">
-                        本站总访问量
-                        <span id="busuanzi_value_site_pv"></span>次
-                    </span>
-                    
-                    </div>
-            
         </div>
     </div>
 </footer>
+<!--网站统计-->
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <!-- jQuery -->
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
