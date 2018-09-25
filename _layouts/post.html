@@ -13,7 +13,8 @@ layout: default
 <!--//添加评论系统-->
 <link rel="stylesheet" href="../../../../css/gitalk.css">
     <script src="../../../../js/gitalk.min.js"></script>
-
+<!--    打赏-->
+<link href="/css/reward.css?v=6.2.0" rel="stylesheet" type="text/css" />
 <style type="text/css">
     header.intro-header{
         position: relative;
@@ -42,7 +43,7 @@ layout: default
                     </div>
                     <h1>{{ page.title }}</h1>
                     {% comment %}
-                        always create a h2 for keeping the margin , Hux
+                        always create a h2 for keeping the margin , Yizibi
                     {% endcomment %}
                     {% comment %} if page.subtitle {% endcomment %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
@@ -74,29 +75,34 @@ layout: default
                 </select>
                 {% endif %}
 
+
 				{{ content }}
 
+
                 <hr style="visibility: hidden;">
+
+
+
 
             <!-- 打赏功能 -->
             <div>
                 <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
                 <div>☛兄dei，请我喝杯茶☚</div>
                 <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-                        <span>打赏</span>
+                    <span>打赏</span>
                 </button>
                 <div id="QR" style="display: none;">
                         
                         
                 <div id="wechat" style="display: inline-block">
-                <img id="wechat_qr" src="/img/payimg/weipayimg.jpg" alt="GJXS 微信支付"/>
+                <img id="wechat_qr" src="/img/payimg/weipayimg.jpg" alt="yizibi 微信支付"/>
                             <p>微信支付</p>
                 </div>
                         
                         
                         
                 <div id="alipay" style="display: inline-block">
-                <img id="alipay_qr" src="/img/payimg/alipayimg.jpg" alt="GJXS 支付宝"/>
+                <img id="alipay_qr" src="/img/payimg/alipayimg.jpg" alt="yizibi 支付宝"/>
                 <p>支付宝</p>
                 </div>
                         
