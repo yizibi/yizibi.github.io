@@ -80,7 +80,18 @@
                     {% endif %}
                 </ul>
                 <p class="copyright text-muted">
-                  本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+<!--                  本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次-->
+                    <span class="site-uv" title="总点击人数">
+                    <img src="/img/vendor/octicons/svg/person.svg" width="10" height="16">
+                    <span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <span class="site-pv" title="总点击量">
+                    <img src="/img/vendor/octicons/svg/eye.svg" width="16" height="16">
+                    <span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <span class="page-pv"title="本页面点击人数">
+                    <img src="/img/vendor/octicons/svg/file-text.svg" width="12" height="16">
+                    <span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span>
                     <br>
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
