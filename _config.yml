@@ -1,5 +1,5 @@
 # Site settings
-title: Yizibi Blog
+title: 一之笔
 SEOTitle: 一之笔的博客 | Yizibi Blog
 header-img: img/home-bg.jpg
 email: liluxinios@gmail.com
@@ -80,7 +80,7 @@ gitalk:
 
 # Google Analytics
 ga_track_id: 'UA-124793396-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: auto
 
 
 
