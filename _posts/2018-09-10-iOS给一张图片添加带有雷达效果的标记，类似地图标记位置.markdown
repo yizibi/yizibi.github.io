@@ -5,6 +5,8 @@ subtitle:   "iOS 动效 标记"
 date: 2018-09-10 15:32:24.000000000 +09:00
 author:     "一之笔"
 header-img: "img/home-bg-o.jpg"
+header-mask: 0.3
+catalog:    true
 tags:
 - iOS技术
 - iOS动画
