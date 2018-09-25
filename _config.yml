@@ -64,6 +64,13 @@ disqus_username: Lucy
 # Netease settings
 netease_comment: false
 
+gitalk:
+    enable: true
+    owner: yizibi
+    repo: Blog_Comments
+    clientID: 3e12c08c2ec52afbcb30
+    clientSecret: c2a74d279e7b42cf782a1d2d1b5a410d27c5ab57
+    admin: yizibi
 
 
 # Analytics settings
