@@ -78,39 +78,39 @@ layout: default
 
                 <hr style="visibility: hidden;">
 
-<!--                    打赏功能-->
-
-                <!-- 打赏功能 -->
-                <div>
+            <!-- 打赏功能 -->
+            <div>
                 <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-                    <div>☛请我喝杯咖啡☚</div>
-                    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+                <div>☛兄dei，请我喝杯茶☚</div>
+                <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
                         <span>打赏</span>
-                    </button>
-                    <div id="QR" style="display: none;">
+                </button>
+                <div id="QR" style="display: none;">
                         
                         
-                        <div id="wechat" style="display: inline-block">
-                            <img id="wechat_qr" src="/img/payimg/weipayimg.jpg" alt="GJXS 微信支付"/>
+                <div id="wechat" style="display: inline-block">
+                <img id="wechat_qr" src="/img/payimg/weipayimg.jpg" alt="GJXS 微信支付"/>
                             <p>微信支付</p>
-                        </div>
-                        
-                        
-                        
-                        <div id="alipay" style="display: inline-block">
-                            <img id="alipay_qr" src="/img/payimg/alipayimg.jpg" alt="GJXS 支付宝"/>
-                            <p>支付宝</p>
-                        </div>
-                        
-                        
-                        
-                    </div>
                 </div>
-
+                        
+                        
+                        
+                <div id="alipay" style="display: inline-block">
+                <img id="alipay_qr" src="/img/payimg/alipayimg.jpg" alt="GJXS 支付宝"/>
+                <p>支付宝</p>
                 </div>
+                        
+                        
+                        
+                        
+                </div>
+                </div>
+                
+            </div>
 
 
 
+   <!--  上一篇或者下一篇post按钮 -->
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
