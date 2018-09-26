@@ -1,9 +1,8 @@
-
 ---
 layout:     post
 title:    "Mac 一步一步教你在Jekyll博客添加评论系统"
 subtitle:   "你的博客有评论系统吗"
-date: 2018-09-26 15:32:24.000000000 +09:00
+date: 2018-09-26 09:32:24.000000000 +09:00
 author:     "一之笔"
 header-img: "img/home-bg-o.jpg"
 header-mask: 0.3
@@ -12,6 +11,7 @@ tags:
 - Linux
 - 博客
 ---
+
 
 > 最近收拾了一下自己的博客系统,添加了一套基于`Github`的评论[gitalk](https://gitalk.github.io/),效果还不错,之前用的[disqus](https://disqus.com)由于其他原因,打不开了;其他评论系统,如 
 
