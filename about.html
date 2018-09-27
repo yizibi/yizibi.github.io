@@ -24,8 +24,8 @@ multilingual: true
     {{ about_en | markdownify }}
 </div>
 <!--//添加评论系统-->
-<link rel="stylesheet" href="../../../../css/gitalk.css">
-    <script src="../../../../js/gitalk.min.js"></script>
+<link rel="stylesheet" href="../../../css/gitalk.css">
+    <script src="../../../js/gitalk.min.js"></script>
 
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
@@ -34,7 +34,7 @@ multilingual: true
 
     </div>
 </div>
-
+{% endif %}
 <!--   gitalk       -->
 {% if site.gitalk %}
 <div class="comment">
