@@ -14,7 +14,7 @@ future: true
 # SNS settings
 RSS: false
 weibo_username:     2524618644
-zhihu_username:     李林飞
+zhihu_username:     li-lin-fei
 github_username:    yizibi
 #twitter_username:   huxpro
 #facebook_username:  huxpro
