@@ -23,7 +23,9 @@ multilingual: true
     {% capture about_en %}{% include about/en.md %}{% endcapture %}
     {{ about_en | markdownify }}
 </div>
-
+<!--//添加评论系统-->
+<link rel="stylesheet" href="../../../../css/gitalk.css">
+    <script src="../../../../js/gitalk.min.js"></script>
 
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
@@ -32,6 +34,14 @@ multilingual: true
 
     </div>
 </div>
+
+<!--   gitalk       -->
+{% if site.gitalk %}
+<div class="comment">
+    {% include comments.html %}
+</div>
+{% endif %}
+
 <!-- disqus 评论框 end -->
 
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
