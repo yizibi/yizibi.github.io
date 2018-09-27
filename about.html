@@ -53,6 +53,12 @@ multilingual: true
         
     </div>
 </div>
+<!--   gitalk       -->
+{% if site.gitalk %}
+<div class="comment">
+    {% include comments.html %}
+</div>
+{% endif %}
 <!-- disqus 评论框 end -->
 
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
