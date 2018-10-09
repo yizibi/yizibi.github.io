@@ -3,8 +3,13 @@ title: 一之笔
 SEOTitle: 一之笔的博客 | Yizibi Blog
 header-img: img/home-bg.jpg
 email: liluxinios@gmail.com
+<<<<<<< HEAD
 description: "iOS 开发 公司合伙人 | 李露鑫，iOS & Photography Lover，Software Engineer，Entrepreneur | 这里是 @Yizibi 李露鑫 的个人博客， 生活需要仪式感，💪。"
 keyword: "李露鑫, Yizibi, iOS, 公司合伙人, @yizibi, @yizibi的博客, 博客, 个人网站, 互联网"
+=======
+description: "iOS 开发 公司合伙人 | 李露鑫，iOS & Photography Lover，Software Engineer，Entrepreneur | 这里是 @Yizibbi 李露鑫 的个人博客， 生活需要仪式感，💪。"
+keyword: "李露鑫, Yizibi,yizibi,一之笔的博客,一之笔,一支笔, iOS, 公司合伙人, @yizibi, @yizibi的博客, 博客, 个人网站, 互联网"
+>>>>>>> 3481310a08099b7fb3adc6269204dcc2d2d2a20e
 url: "https://yizibi.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -14,11 +19,11 @@ future: true
 # SNS settings
 RSS: false
 weibo_username:     2524618644
-zhihu_username:     李林飞
+zhihu_username:     li-lin-fei
 github_username:    yizibi
-#twitter_username:   huxpro
-#facebook_username:  huxpro
 linkedin_username:  露鑫-李-525b58111
+twitter_username:   yizibi
+facebook_username:  yizibbi
 
 
 
@@ -129,5 +134,17 @@ friends: [
     },{
 	title: "玉令天下",
 	href: "http://yulingtianxia.com/"
+    },{
+	title: "卟败灬筱龙",
+	href: "http://ilongge.cn/"
+    },{
+	title: "Lara Croft",
+	href: "http://tombraiderjf.com/"
+    },{
+	title: "耀日庄主的博客",
+	href: "http://srsyrzz.ml/"
+    },{
+	title: "Hope",
+	href: "https://leohope.com/"
     }
 ]
