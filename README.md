@@ -4,11 +4,29 @@
 
 👉 [我的博客在这里](https://yizibi.github.io/)
 
+在[这个Project中](https://github.com/yizibi/yizibi.github.io/projects/1),你可以看到博客最近的进展dashboard,大概就是下面这个样子;
+
+!(博客进展)[http://o9zpq25pv.bkt.clouddn.com/lucyBlog/gitdashtodolist@2x.png]
+
+#### 博客预览
+
+![个人博客预览](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/blogPreview.gif)
+
 我是一之笔,16年10月跟大学同学合伙创办了一家公司:[西安道生化工科技有限公司](https://www.6chemical.com/)
 
 其次,我是一个 iOS coder，喜欢研究一些新技术,致力于 自由职业者;
 
 平时喜欢整理个人博客，逛逛技术论坛,喜欢摄影。
+
+#### 最近及未来计划
+
+- [ ] 博客添加代码高亮;
+- [ ] 更新一篇文章,如何快速拥有自己的博客;
+- [ ] 添加文章分页插件;
+- [ ] 增加全局搜索功能;
+- [ ] 增加点击滑动到顶部功能;
+- [ ] 增加字数统计,增加网站安全运行统计;
+- [ ] 增加最近发布目录功能;
 
 > 我迷失了自己
 
@@ -24,7 +42,8 @@
 * ✅增加`打赏`模块;
 * ✅增加`gitalk`评论模块;
 * ✅增加静态动画;
-* ✅增加网站页面访问统计;
+* ✅增加谷歌网站页面访问统计;
+* ✅增加卜算子统计;
 
 本站源码可以在[这里](https://github.com/yizibi/yizibi.github.io)获取,如果你喜欢,欢迎 [clone]((https://github.com/yizibi/yizibi.github.io)),打造属于自己的个性博客;
 
