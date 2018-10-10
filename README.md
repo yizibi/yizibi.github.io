@@ -6,8 +6,7 @@
 
 在[这个Project中](https://github.com/yizibi/yizibi.github.io/projects/1),你可以看到博客最近的进展dashboard,大概就是下面这个样子;
 
-!(博客进展)[http://o9zpq25pv.bkt.clouddn.com/lucyBlog/gitdashtodolist@2x.png]
-
+![博客进展](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/gitdashtodolist@2x.png)
 #### 博客预览
 
 ![个人博客预览](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/blogPreview.gif)
