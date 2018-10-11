@@ -4,7 +4,7 @@ title:    "写完代码去旅行"
 subtitle:   "说走咱就走,破罐子破摔,活在当下,向前看"
 date: 2018-10-10 23:32:24.000000000 +09:00
 author:     "一之笔"
-header-img: "img/post-bg-sunrise"
+header-img: "img/post-bg-sunrise.jpg"
 header-mask: 0.3
 catalog:    true
 tags:
