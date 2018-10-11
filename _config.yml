@@ -41,6 +41,7 @@ timezone: CN
 # `$ gem install jekyll-paginate`
 plugins: [jekyll-paginate]
 plugins: [jekyll-sitemap]
+gems: [jekyll-sitemap]
 
 
 # Markdown settings
