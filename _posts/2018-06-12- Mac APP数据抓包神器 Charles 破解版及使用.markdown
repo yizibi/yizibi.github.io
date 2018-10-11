@@ -9,6 +9,8 @@ tags:
 - 工具
 ---
 
+文章原创如需转载，请注明出处"本文首发于[一之笔](https://yizibi.github.io/)";
+
 
 ![](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/charlesicon@2x.png)
 

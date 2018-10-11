@@ -12,6 +12,7 @@ tags:
 - 博客
 ---
 
+文章原创如需转载，请注明出处"本文首发于[一之笔](https://yizibi.github.io/)";
 
 > 最近收拾了一下自己的博客系统,添加了一套基于`Github`的评论[gitalk](https://gitalk.github.io/),效果还不错,之前用的[disqus](https://disqus.com)由于其他原因,打不开了;其他评论系统,如 
 

@@ -9,6 +9,8 @@ tags:
 - iOS技术
 ---
 
+文章原创如需转载，请注明出处"本文首发于[一之笔](https://yizibi.github.io/)";
+
 #### question
 
 > [摘要] 最近在使用AFNetworking的时候,遇到如下报错:AFNetworking报错:(415 Domain=com.alamofire.error.serialization.response Code=-1011 "Request failed: unsupported media type (415)")
