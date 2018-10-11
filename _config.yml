@@ -42,6 +42,8 @@ timezone: CN
 plugins: [jekyll-paginate]
 plugins: [jekyll-sitemap]
 gems: [jekyll-sitemap]
+paginate_path: "page:num"   #分页页面路径格式
+
 
 
 # Markdown settings

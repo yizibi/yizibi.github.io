@@ -40,3 +40,20 @@ description: "我干了什么 究竟拿了时间换了什么"
     {% endif %}
 </ul>
 {% endif %}
+
+
+{% include pagination.html %}
+
+<ul class="list-container">
+    {% for post in paginator.posts %}
+    <li class="list-item clearfix">
+        <div class="list-content">
+            <h2><a class="link-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+            <div class="meta">
+                <a class="category" href="/categories.html#{{post.categories}}">{{ post.categories }}</a>
+                <time class="date">{{ post.date | date: "%Y-%m-%d" }}</time>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
