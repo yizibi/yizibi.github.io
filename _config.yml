@@ -33,7 +33,8 @@ anchorjs: true                          # if you want to customize anchor. check
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 timezone: CN  
 
-
+# Back to top 回到顶部by ray-eldath
+b2t: true
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
