@@ -149,12 +149,8 @@ mp3_embed();
 
 在`_layouts`目录下,`default.html`这个文件,打开,在最下面,找到对应的标签`</body>`,加入如下代码,注意:标签不要重复了
 
-``` Object-C
-<script src="/js/jquery.min.js"></script>
-{% include open-embed.html %}
-</body> //看清楚,不要重复
-</html> //不要重复
-```
+![](http://o9zpq25pv.bkt.clouddn.com/blog_step3.png-shuiyin?imageMogr2/thumbnail/!70p)
+
 
 ### 使用语法
 
