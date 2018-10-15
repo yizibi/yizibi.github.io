@@ -4,7 +4,7 @@ title:    "jekyll个人博客中添加音乐播放插件"
 subtitle:   "在音乐中生活,你的博客可以播放音乐吗"
 date: 2018-10-15 20:32:24.000000000 +09:00
 author:     "一之笔"
-header-img: "img/post-bg-music"
+header-img: "img/post-bg-music.jpg"
 header-mask: 0.3
 catalog:    true
 tags:
