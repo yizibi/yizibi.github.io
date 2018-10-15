@@ -4,7 +4,7 @@ title:    "和你走过西安的那些地方"
 subtitle:   "在天愿作比翼鸟,在地愿为连理枝,历史的见证"
 date: 2018-10-13 10:32:24.000000000 +09:00
 author:     "一之笔"
-header-img: "img/post-bg-kuaidi"
+header-img: "img/post-bg-kuaidi.jpg"
 header-mask: 0.3
 catalog:    true
 tags:
