@@ -18,7 +18,7 @@ tags:
 
 ### NSTimer常用的两种创建方法
 
-```
+```Object-C
 /**
  *  创建定时器
  *  @param ti        定时器间隔时间
@@ -36,7 +36,7 @@ tags:
 通过timerWith...创建的定时器,必须注意,需要将定时器手动添加到当前的runloop中,否则定时器不会激发,并且要注意runloop的模式,关于runloop的模式,主要有`NSDefaultRunLoopMode`和`UITrackingRunLoopMode`,而这两种模式都被称为[通用模式]`NSRunLoopCommonModes`,可以通过NSLog打印当前模式,[NSRunloop currentRunloop],runloop的设定模式不同,定时器的作用就不同,具体如下:
 
 
-```
+```Object-C
 //创建定时器
  NSTimer *timer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(show) userInfo:nil repeats:YES];
 //添加带runloop中,并且设定模式(默认模式,当用户进行交互的时候,定时器会停止工作)
@@ -58,7 +58,7 @@ tags:
 
 通过scheduled...创建的定时器,系统会默认将定时器添加到默认的模式中,但是我们可以人为的修改定时器的运行模
 
-```
+```Object-C
 NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(show) userInfo:nil repeats:YES];
 //更改模式
 [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
@@ -69,7 +69,7 @@ NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self select
 
 和NSTimer相比,GCD中的定时器,不受runloop模式的影响,使用起来,也比较方便,直接敲dispatch_source会有代码段提示,然后就是补充参数即可,但是需要注意:由于GCD创建的定时器会在block中有回调,所以一开始创建的定时器要被`强引用`,否则,一旦创建完,当回调block的时候,早都挂了,具体如下:
 
-```
+```Object-C
 
 - (void)gcdTimer
 {
@@ -110,7 +110,7 @@ dispatch_source_t  timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0,
 CADisplayLink以特定模式添加到runloop后，每当屏幕显示内容刷新结束的时候，runloop就会向CADisplayLink指定的target发送一次指定的selector消息， CADisplayLink类对应的selector就会被调用一次。
 具体使用如下:
 
-```
+```Object-C
 如何使用?
 -(void)viewDidLoad
 {    CADisplayLink *link = [CADisplayLink displayLinkWithTarget:self        selector:@selector(setNeedsDisplay)];   
@@ -132,4 +132,4 @@ static int _mdsY = 0;
 
 ```
 
-#### 总的来说,OC中的定时器,就这么多,最常用的也就是前两种,但是具体使用哪种定时器,看个人自己了,有什么问题,非常欢迎!谢谢.
+>  总的来说,OC中的定时器,就这么多,最常用的也就是前两种,但是具体使用哪种定时器,看个人自己了,有什么问题,非常欢迎!谢谢.
