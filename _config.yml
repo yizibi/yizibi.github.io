@@ -116,15 +116,6 @@ page-mathjax: false
 # Friends
 friends: [
     {
-        title: "ibireme的博客 ",
-        href: "https://blog.ibireme.com/"
-     },{
-        title: "冰霜之地",
-        href: "https://halfrost.com/"
-    },{
-	title: "Casa Taloyum",
-	href: "https://casatwy.com/"
-    },{
 	title: "Junhua's Blog",
 	href: "https://blog.searchinfogo.com"
     },{
@@ -148,5 +139,8 @@ friends: [
     },{
 	title: “五斤”,
 	href: "https://www.chairyfish.com/"
+    },{
+	title: “asdfv1929”,
+	href: "https://asdfv1929.github.io/"
     }
 ]
