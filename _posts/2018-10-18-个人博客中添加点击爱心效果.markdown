@@ -1,0 +1,95 @@
+---
+layout:     post
+title:    "个人博客中添加点击爱心效果"
+subtitle:   "给自己的博客增加一点爱心"
+date: 2018-10-18 15:32:24.000000000 +09:00
+author:     "一之笔"
+header-img: "img/post-bg-livejs.jpg"
+header-mask: 0.3
+catalog:    true
+tags:
+- Linux
+- 博客
+- 工具
+---
+
+文章首发个人博客,转载参考注明来源[一之笔](https://yizibi.github.io/);
+
+> 浏览别人的博客,看到比较好的体验或者小功能,就想也加到自己的博客中,比如之前的背景动画,还有这个鼠标点击的爱心动画,我感觉挺有意思的,就实践一下;
+
+### 最终效果
+
+![](http://o9zpq25pv.bkt.clouddn.com/loveanimation.gif?imageMogr2/thumbnail/!70p)
+
+
+### Mac 安装Jekyll
+
+> 之所以安装Jekyll,完全是为了便于本地调试;
+
+按照[Jekyll官网指南](https://jekyllcn.com/docs/quickstart/),启动终端,输入如下命令:
+
+#### mac安装
+
+`gem install jekyll`
+
+如果没有权限,就用下面这个:
+
+`sudo gem install jekyll`
+
+查看Jekyll版本
+
+`jekyll --version`
+
+#### 启动Jekyll
+
+首先 cd 到你的个人博客根目录下,然后输入如下命令:
+
+`jekyll serve`
+
+成功的话,就能看到下面的结果:打开浏览器输入如下的地址,就能看到效果了
+
+![](http://o9zpq25pv.bkt.clouddn.com/1539836194.png?imageMogr2/thumbnail/!70p)
+
+### 爱心点击添加
+
+#### 创建`love.js`文件
+
+复制如下代码,copy到`love.js`文件中,然后保存;[代码来源](https://asdfv1929.github.io/2018/01/26/click-love/)
+
+```JS
+!function(e,t,a){function n(){c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),o(),r()}function r(){for(var e=0;e<d.length;e++)d[e].alpha<=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText="left:"+d[e].x+"px;top:"+d[e].y+"px;opacity:"+d[e].alpha+";transform:scale("+d[e].scale+","+d[e].scale+") rotate(45deg);background:"+d[e].color+";z-index:99999");requestAnimationFrame(r)}function o(){var t="function"==typeof e.onclick&&e.onclick;e.onclick=function(e){t&&t(),i(e)}}function i(e){var a=t.createElement("div");a.className="heart",d.push({el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()}),t.body.appendChild(a)}function c(e){var a=t.createElement("style");a.type="text/css";try{a.appendChild(t.createTextNode(e))}catch(t){a.styleSheet.cssText=e}t.getElementsByTagName("head")[0].appendChild(a)}function s(){return"rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"}var d=[];e.requestAnimationFrame=function(){return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,1e3/60)}}(),n()}(window,document);
+```
+
+#### 博客中调用
+
+* Jekyll驱动的博客调用
+
+将`love.js`文件移动到如下目录:
+
+`/js/src/love.js`
+
+然后打开`_layouts/default.html`,找到最后一行,有`</body>`的前面,添加调用
+
+```JS
+<!--鼠标点击爱心动画-->
+<script type="text/javascript" src="/js/src/love.js"></script>
+```
+最后保存启动本地测试,就能看到效果了,如果没有,就需要修改调试;
+
+* Hexo驱动的博客调用
+
+Hexo驱动的博客,只是调用方式以及修改的代码不同,JS文件是相同的;
+
+将love.js文件移动到如下目录:
+
+`/themes/next/source/js/src`
+
+修改_layout.swig文件,在/themes/next/layout/_layout.swig文件末尾添加：
+
+```JS
+<!--鼠标点击爱心动画-->
+<script type="text/javascript" src="/js/src/love.js"></script>
+```
+基本上启动,就能看到效果了;
+
+结束,如果在添加的过程中,有问题,欢迎留言;
