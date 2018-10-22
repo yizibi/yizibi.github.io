@@ -1,13 +1,14 @@
 ---
 layout:     post
-title:    "Mac环境一站式搭建VPN,绿色上网一"
+title:    "Mac科学搭建VPN,绿色上网"
 subtitle:   "绿色上网"
 date: 2016-07-25 15:32:24.000000000 +09:00
 author:     "一之笔"
 header-img: "img/home-bg-o.jpg"
+catalog:    true
 tags:
-- iOS问题
-- iOS技术
+- VPS
+- 工具
 ---
 
 
