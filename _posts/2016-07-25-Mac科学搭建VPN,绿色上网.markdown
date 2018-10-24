@@ -11,6 +11,10 @@ tags:
 - 工具
 ---
 
+### 181018更新内容
+
+>手机 APP Store中,相关的VPN配置APP差不多都已经下线了,如果需要的话,可以在某宝买一个国外的apple ID,大概5块钱,登录国外的APP Store,下载这个软件
+![](http://yizhibi.6chemical.com/potatsoVPN.png?imageMogr2/thumbnail/!70p)
 
 ### 写在前面
 作为一枚小小的程序猿,很多时候,由于度娘资源有限,满足不了我小小的愿望,而我也是一个不安分的程序猿,曾经一直使用Labtern(__蓝灯__),但是不稳定,速度也不怎么友好,后来通过Google了解到可以自己搭建VPS来实现自己科学上网的愿望，通过参考[史上最详尽Shadowsocks从零开始一站式翻墙教程][1],终于实现了科学绿色上网,少年,行动起来吧!
@@ -101,24 +105,23 @@ Shadowsocks客户端的[下载地址](https://shadowsocks.org/en/download/client
 
 下载 Shadowsocks 完成后,按照如下步骤打开:
 
-![ss配置](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/WechatIMG47.jpeg)
+![ss配置](http://yizhibi.6chemical.com/lucyBlog/WechatIMG47.jpeg)
 
 主要有四个地方要填，服务器的地址，端口号，加密方法，密码。服务器地址即为之前 Main controls 选项中的IP地址。端口号、加密方法、密码必须与之前 Shadowsocks Server 中的信息一一匹配，否则会连接失败。
 
 #### 5.3 手机配置
 
-App Store 搜索 SuperWingy,然后打开,添加配置:参数基本上跟电脑差不多,
-具体如下:
+~~App Store 搜索 SuperWingy,~~然后打开,添加配置:参数基本上跟电脑差不多,
+手机 APP Store中,相关的VPN配置APP差不多都已经下线了,如果需要的话,可以在某宝买一个国外的apple ID,大概5块钱,登录国外的APP Store,下载这个软件
+![](http://yizhibi.6chemical.com/potatsoVPN.png?imageMogr2/thumbnail/!70p)
+具体配置如下:
 ![手机配置](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/google/WechatIMG48.jpeg)
-
 
 
 [参考文章]
 1. [史上最详尽Shadowsocks从零开始一站式翻墙教程][1];
 2. [写给非专业人士看的 Shadowsocks 简介](https://vc2tea.com/whats-shadowsocks/);
 3. [搬瓦工+shadowsocks：搭建自己的VPN服务器](https://moshuqi.github.io/2017/07/20/%E8%87%AA%E5%B7%B1%E6%90%AD%E5%BB%BAVPN%E6%9C%8D%E5%8A%A1%E5%99%A8/#mac%E9%85%8D%E7%BD%AE);
-
-
 
 
 [1]:	http://shadowsocks.blogspot.jp/2015/01/shadowsocks.html#gpluscomments
