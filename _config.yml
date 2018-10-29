@@ -61,11 +61,9 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-
-
-# Disqus settings
-
-disqus_username: yizibi 
+# Comment
+comment:
+    disqus: yizibi
 
 # Netease settings
 netease_comment: false
