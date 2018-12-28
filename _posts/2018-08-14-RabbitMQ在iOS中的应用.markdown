@@ -74,20 +74,20 @@ RabbitMQ 提供了许多插件，来从多方面进行扩展，也可以编写�
 所有 MQ 产品从模型抽象上来说都是一样的过程：
 消费者（consumer）订阅某个队列。生产者（producer）创建消息，然后发布到队列（queue）中，最后将消息发送到监听的消费者。
 
-![消息模型](http://o9zpq25pv.bkt.clouddn.com/MQ-sendMessage.png)
+![消息模型](http://yizhibi.6chemical.com/MQ-sendMessage.png)
 
 * AMQP的内部结构
 
 上面介绍RabbitMQ是AMQP的实现，所以其内部也是AMQP的概念
 
-![RabbbitMQ的内部结构](http://o9zpq25pv.bkt.clouddn.com/MQ/AMQP-image.png)
+![RabbbitMQ的内部结构](http://yizhibi.6chemical.com/MQ/AMQP-image.png)
 
 
 * P(Producer) 生产者，有的也称之为 Publisher,消息的发布者
 
 发送消息的程序或者代码就是生产者，一般是 服务端
 
-![生产者](http://o9zpq25pv.bkt.clouddn.com/MQ-producer.png)
+![生产者](http://yizhibi.6chemical.com/MQ-producer.png)
 
 * Exchange(交换器)
 
@@ -126,7 +126,7 @@ RabbitMQ为routing key设定的长度限制为255 bytes。
 
 订阅某个队列，消息的接受者
 
-![消费者](http://o9zpq25pv.bkt.clouddn.com/MQ-consumer.png)
+![消费者](http://yizhibi.6chemical.com/MQ-consumer.png)
 
 ### 1.4 RabbitMQ 中的消息路由
 生产者把消息发布到 Exchange 上，消息最终到达队列并被消费者接收，而 Binding 决定交换器的消息应该发送到那个队列。
@@ -136,7 +136,7 @@ RabbitMQ为routing key设定的长度限制为255 bytes。
 binding key 并不是在所有情况下都生效，它依赖于Exchange Type，比如fanout类型的Exchange就会无视binding key，而是将消息路由到所有绑定到该Exchange的Queue。
 
 
-![AMOP的消息路由](http://o9zpq25pv.bkt.clouddn.com/MQ/MQroute.png)
+![AMOP的消息路由](http://yizhibi.6chemical.com/MQ/MQroute.png)
 
 ### 1.5 RabbitMQ 的Exchange Types
 
@@ -160,12 +160,12 @@ RMQQueue *q = [ch queue:@"" options:RMQQueueDeclareExclusive | RMQQueueDeclareAu
 
 ```
 
-![Exchange Direct类型](http://o9zpq25pv.bkt.clouddn.com/MQ-Direct.png)
+![Exchange Direct类型](http://yizhibi.6chemical.com/MQ-Direct.png)
 
 * fanout
 这种类型的Exchange,就是群发，此exchange的路由规则很简单直接将消息路由到所有绑定的队列中，无须对消息的routingkey进行匹配操作。
 
-![Exchange fanout类型](http://o9zpq25pv.bkt.clouddn.com/MQ%20fanout.png)
+![Exchange fanout类型](http://yizhibi.6chemical.com/MQ%20fanout.png)
 
 ```
 /**  需要注意：<RMQConnectionDelegate> 如果创建连接，指定代理是 当前class,那么当前class需要遵守连接的代理协议，并实现相关代理方法*/
@@ -217,7 +217,7 @@ RMQExchange * exchange = [channel topic:@"topic_logs" options:RMQExchangeDeclare
 
 ```
 
-![Topic 类型](http://o9zpq25pv.bkt.clouddn.com/MQ%20topic%20Type.png)
+![Topic 类型](http://yizhibi.6chemical.com/MQ%20topic%20Type.png)
 
 以上图中的配置为例，routingKey=”dev.alarm.device”的消息会同时路由到QA与QB，routingKey=”dev.alarm.type”的消息会路由到QA，routingKey=”lazy.brown.fox”的消息会路由到Q2，routingKey=”water.type.ID”的消息会路由到QB；routingKey=”device.user.water”、routingKey=”alarmtype”的消息将会被丢弃，因为它们没有匹配任何bindingKey。
 
@@ -599,7 +599,7 @@ RMQQueue *q = [ch queue:@"" options:RMQQueueDeclareExclusive | RMQQueueDeclareAu
 
 如果连接成功后，那么在MQ的管理台，就可以看到当前连接的消费者了
 
-![管理台当前连接消费者](http://o9zpq25pv.bkt.clouddn.com/%E5%9B%BE%E7%89%87.png)
+![管理台当前连接消费者](http://yizhibi.6chemical.com/%E5%9B%BE%E7%89%87.png)
 
 [参考文章]
 
