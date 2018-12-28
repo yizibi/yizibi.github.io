@@ -23,7 +23,7 @@ tags:
 
 ### 先看一下最终效果
 
-![](http://o9zpq25pv.bkt.clouddn.com/ceahuchouti.gif)
+![](http://yizhibi.6chemical.com/ceahuchouti.gif)
 
 ### 初期探索
 
@@ -31,7 +31,7 @@ tags:
 
 下图是app更改前后的结构对比图:
 
-![](http://o9zpq25pv.bkt.clouddn.com/chouti.png?imageMogr2/thumbnail/1000x400)
+![](http://yizhibi.6chemical.com/chouti.png?imageMogr2/thumbnail/1000x400)
 
 * 开始尝试一:(不更改原来项目的结构)
    
@@ -60,7 +60,7 @@ tags:
 * star✨:7000+经得起考验;
 * 效果图:
 
-![](http://o9zpq25pv.bkt.clouddn.com/1649244b7-2.gif)
+![](http://yizhibi.6chemical.com/1649244b7-2.gif)
 
 ### MMDrawerController使用简介
 

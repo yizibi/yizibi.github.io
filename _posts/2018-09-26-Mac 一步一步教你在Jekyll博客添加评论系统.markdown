@@ -26,7 +26,7 @@ tags:
 
 ## 最终成果
 
-![Gitalk](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/gitalkComment.png)
+![Gitalk](http://yizhibi.6chemical.com/lucyBlog/gitalkComment.png)
 
 ## 博主环境
 
@@ -39,7 +39,7 @@ tags:
 
 `注意`:我下面的截图是因为我已经有注册好的GitHubAPP,因此可能跟你的不一样,大概流程是一样的;
 
-![Git创建APP](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/gitsetingnext.png)
+![Git创建APP](http://yizhibi.6chemical.com/lucyBlog/gitsetingnext.png)
 
 感谢这个[作者文章](https://jacobpan3g.github.io/cn/2017/07/17/gitment-in-jekyll/),说明,博客网站的回调地址,一定要填写博客的域名,切记切记;
 ## 在jekyll博客添加gitalk

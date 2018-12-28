@@ -15,17 +15,17 @@ tags:
 **最终结果:**
 
 
-![](http://o9zpq25pv.bkt.clouddn.com/blogcornersResults.png)
+![](http://yizhibi.6chemical.com/blogcornersResults.png)
 
 ### 一.app中的需求
 
 * __头像的圆形处理__
 
-![](http://o9zpq25pv.bkt.clouddn.com/blogcornersphoto01.png)
+![](http://yizhibi.6chemical.com/blogcornersphoto01.png)
 
 * __图片的左上和右上圆角需求__
 
-![](http://o9zpq25pv.bkt.clouddn.com/blogcornersphoto.png)
+![](http://yizhibi.6chemical.com/blogcornersphoto.png)
 
 ### 二.解决办法
 

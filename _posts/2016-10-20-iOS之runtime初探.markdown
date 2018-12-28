@@ -60,7 +60,7 @@ tags:
 #### 2.2消息机制的原理
 
 * 消息机制原理:对象根据方法编号SEL去映射表查找对应的方法实现
-	*	![](http://o9zpq25pv.bkt.clouddn.com/Snip20151013_4.png)
+	*	![](http://yizhibi.6chemical.com/Snip20151013_4.png)
 
 ### 三.runtime的应用
 
@@ -215,11 +215,11 @@ unsigned int count;
 
 * 交换原理：
 	* 交换之前：
-	![](http://o9zpq25pv.bkt.clouddn.com/Snip20151013_2.png)
+	![](http://yizhibi.6chemical.com/Snip20151013_2.png)
 
 	
 	* 交换之后：
-	![](http://o9zpq25pv.bkt.clouddn.com/Snip20151013_3.png)
+	![](http://yizhibi.6chemical.com/Snip20151013_3.png)
 	
 
 #### 3.4动态添加方法

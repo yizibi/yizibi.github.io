@@ -12,7 +12,7 @@ tags:
 文章原创如需转载，请注明出处"本文首发于[一之笔](https://yizibi.github.io/)";
 
 
-![](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/charlesicon@2x.png)
+![](http://yizhibi.6chemical.com/lucyBlog/charlesicon@2x.png)
 
 [Charles官网](https://www.charlesproxy.com/)
 
@@ -48,13 +48,13 @@ tags:
 * 首先,电脑安装 `SSL` 证书
 
 看大图如下:
-![安装rootSSL证书](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/charlesSSLRoot.png)
+![安装rootSSL证书](http://yizhibi.6chemical.com/lucyBlog/charlesSSLRoot.png)
 
 `需要注意`:Mac 默认安装外来的证书是不被信任的,需要完全信任;
 * 证书信任
 
 打开钥匙串,找到刚才下载的证书,然后点开,找到信任,修改成 完全信任,如下:
-![SSL证书信任设置](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/charlesSSKxinren@2x.png)
+![SSL证书信任设置](http://yizhibi.6chemical.com/lucyBlog/charlesSSKxinren@2x.png)
 
 至此,基本的软件环境设置完成;
 
@@ -64,24 +64,24 @@ tags:
 
 http抓包比较简单,电脑设置好之后,配置手机代理,点开 WIFI 名称,打开WIFI详情,点击 配置代理,选择 手动,设置 服务器 跟 端口,设置好之后,电脑会弹窗,是否允许电脑作为手机http代理,选择 yes即可,不要手快,点击了 deny 了,说了这么多,其实就是下面一个图:
 
-![配置代理](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/charlesdelegateSeting.PNG)
+![配置代理](http://yizhibi.6chemical.com/lucyBlog/charlesdelegateSeting.PNG)
 
 不出意外的话,就可以看到请求的数据了
 
-![](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/charlesResult.png)
+![](http://yizhibi.6chemical.com/lucyBlog/charlesResult.png)
 
 
 #### 2.2 https 抓包
 
 * 手机安装 SSL 证书,打开 safari 浏览器,输入 Charles 软件获取到的地址,按照要求一路 next 操作;
 
-![](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/charleshttpsIphoneSSL.png)
+![](http://yizhibi.6chemical.com/lucyBlog/charleshttpsIphoneSSL.png)
 
 信任证书即可操作;
 
 * 设置软件SSL 端口跟域名白名单
 
-![](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/charlesSetingSSL.png)
+![](http://yizhibi.6chemical.com/lucyBlog/charlesSetingSSL.png)
 
 ### 三.可能遇到的问题
 
@@ -92,7 +92,7 @@ http抓包比较简单,电脑设置好之后,配置手机代理,点开 WIFI 名�
 应用程序->Charles->显示包内容->info.plis如下:
 在VMOptions中加一项：`-Dfile.encoding=UTF-8`
 如下图:
-![中文乱码设置](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/charleszhongwenluanma.png)
+![中文乱码设置](http://yizhibi.6chemical.com/lucyBlog/charleszhongwenluanma.png)
 
 
 #### https 手机端证书安装了,也信任了,还是无法查看信息

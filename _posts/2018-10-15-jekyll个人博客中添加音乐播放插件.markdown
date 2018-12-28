@@ -143,13 +143,13 @@ mp3_embed();
 
 将上一步存储好的文件,保存到`_includes`目录下,就像下面这个样子
 
-![](http://o9zpq25pv.bkt.clouddn.com/blog_openembed.png?imageMogr2/thumbnail/!70p)
+![](http://yizhibi.6chemical.com/blog_openembed.png?imageMogr2/thumbnail/!70p)
 
 #### step3
 
 在`_layouts`目录下,`default.html`这个文件,打开,在最下面,找到对应的标签`</body>`,加入如下代码,注意:标签不要重复了
 
-![](http://o9zpq25pv.bkt.clouddn.com/blog_step3.png-shuiyin?imageMogr2/thumbnail/!70p)
+![](http://yizhibi.6chemical.com/blog_step3.png-shuiyin?imageMogr2/thumbnail/!70p)
 
 
 ### 使用语法
@@ -165,7 +165,7 @@ mp3_embed();
 ### 示例
 按照上面的步骤走,即可获得如下效果的播放器（以下音乐为「西安人的歌」）
 
-<p>http://o9zpq25pv.bkt.clouddn.com/lucyBlog/xianrendege.mp3</p>
+<p>http://yizhibi.6chemical.com/lucyBlog/xianrendege.mp3</p>
 
 结束了;
 

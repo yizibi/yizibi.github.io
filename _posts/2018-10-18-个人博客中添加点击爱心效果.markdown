@@ -19,7 +19,7 @@ tags:
 
 ### 最终效果
 
-![](http://o9zpq25pv.bkt.clouddn.com/loveanimation.gif?imageMogr2/thumbnail/!70p)
+![](http://yizhibi.6chemical.com/loveanimation.gif?imageMogr2/thumbnail/!70p)
 
 
 ### Mac 安装Jekyll
@@ -48,7 +48,7 @@ tags:
 
 成功的话,就能看到下面的结果:打开浏览器输入如下的地址,就能看到效果了
 
-![](http://o9zpq25pv.bkt.clouddn.com/1539836194.png?imageMogr2/thumbnail/!70p)
+![](http://yizhibi.6chemical.com/1539836194.png?imageMogr2/thumbnail/!70p)
 
 ### 爱心点击添加
 
