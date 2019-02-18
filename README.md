@@ -6,10 +6,10 @@
 
 在[这个Project中](https://github.com/yizibi/yizibi.github.io/projects/1),你可以看到博客最近的进展dashboard,大概就是下面这个样子;
 
-![博客进展](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/gitdashtodolist@2x.png)
+![博客进展](http://yizhibi.6chemical.com/lucyBlog/gitdashtodolist@2x.png)
 #### 博客预览
 
-![个人博客预览](http://o9zpq25pv.bkt.clouddn.com/lucyBlog/blogPreview.gif)
+![个人博客预览](http://yizhibi.6chemical.com/lucyBlog/blogPreview.gif)
 
 我是一之笔,16年10月跟大学同学合伙创办了一家公司:[西安道生化工科技有限公司](https://www.6chemical.com/)
 
