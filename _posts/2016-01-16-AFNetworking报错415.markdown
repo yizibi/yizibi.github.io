@@ -7,6 +7,7 @@ author:     "一之笔"
 header-img: "img/home-bg-o.jpg"
 tags:
 - iOS技术
+- AFN
 ---
 
 文章原创如需转载，请注明出处"本文首发于[一之笔](https://yizibi.github.io/)";
