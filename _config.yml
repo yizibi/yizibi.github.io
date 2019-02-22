@@ -89,7 +89,7 @@ ga_domain: auto
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "For the next quantum leap<br>生活需要仪式感💪"
+sidebar-about-description: “大圣，此去欲何？”<br>“踏南天，碎凌霄”<br>“如若一去不回……？”<br>“便一去不回！💪"
 sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
