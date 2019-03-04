@@ -14,6 +14,40 @@ tags:
 
 文章原创如需转载，请注明出处"本文首发于[一之笔](https://yizibi.github.io/)";
 
+> 2019年3月更新如下:
+
+将 gitalk 配置的代码,抽离成一个文件 comments;
+
+路径: _includes/comments;
+
+在_post.html文件中,打开,搜索 "评论框"关键字,将 comments 引入即可;
+
+```Html
+
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+var gitalk = new Gitalk({
+id: '{{ page.date }}', //这里不要写死,你看到下文中写死的日期,是因为,博客部署的时候,自动引用了文章的发布日期;
+clientID: '{{ site.gitalk.clientID }}',
+clientSecret: '{{ site.gitalk.clientSecret }}',
+repo: '{{ site.gitalk.repo }}',
+owner: '{{ site.gitalk.owner }}',
+admin: ['{{ site.gitalk.owner }}'], 
+labels: ['Gitalk'],
+})
+gitalk.render('gitalk-container')
+</script> 
+
+```
+## 一定注意
+这个gitalk的id,是唯一的,一般是 当前的时间戳,不要写死,也不要写成 文章的标题,page.title,如果文章标题过长,会出现 以下错误;
+
+ Error: Not Found.
+
+所以这个id,以 page.date 为准,这个要注意下;
+
 > 最近收拾了一下自己的博客系统,添加了一套基于`Github`的评论[gitalk](https://gitalk.github.io/),效果还不错,之前用的[disqus](https://disqus.com)由于其他原因,打不开了;其他评论系统,如 
 
 * 多说,多说已经关闭;
@@ -105,7 +139,7 @@ tags:
 
 还是在那个 `_post.html`文件中,找到 关键字 评论框 在下面添加 gitalk 代码,如下
 
-```
+```Html
 
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
@@ -133,7 +167,7 @@ tags:
 
 这个在 `_config.yml`中,打开这个文件,在对应的评论模块添加如下代码:
 
-```
+```Html
 # Disqus settings
 
 # disqus_username: Lucy
