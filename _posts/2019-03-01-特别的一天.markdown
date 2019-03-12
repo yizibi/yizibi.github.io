@@ -5,6 +5,7 @@ subtitle:   "告诉自己,要开心"
 date: 2019-03-01 18:32:24.000000000 +09:00
 author:     "一之笔"
 header-img: "img/post_bg_03_01.jpg"
+catalog:    true
 tags:
 - 生活
 - 随笔
