@@ -2,7 +2,7 @@
 layout:     post
 title:    "如何用Pod集成Flutter"
 subtitle:   "放弃用手动集成Flutter吧,太不方便了"
-date: 2019-05-11 10:32:24.000000000 +09:00
+date: 2019-05-11 08:32:24.000000000 +09:00
 author:     "一之笔"
 header-img: "img/post_flutter_0511.jpg"
 header-mask: 0.3
@@ -12,7 +12,6 @@ tags:
 - Flutter
 - 跨平台
 ---
-
 
 ![](http://yizhibi.6chemical.com/1557401382.png?imageMogr2/thumbnail/!70p)
 
