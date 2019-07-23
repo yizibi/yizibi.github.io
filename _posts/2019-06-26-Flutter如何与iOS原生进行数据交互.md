@@ -15,7 +15,6 @@ tags:
 
 文章首发整理个人博客,转载参考注明来源[一之笔](https://yizibi.github.io/);
 
-
 ![](http://yizhibi.6chemical.com/lucyBlog/Flutter%E4%BA%A4%E4%BA%92.png)
 
 上节主要整理了→[如何用Pod集成Flutter](https://yizibi.github.io/2019/05/10/%E5%A6%82%E4%BD%95%E7%94%A8Pod%E9%9B%86%E6%88%90Flutter/)，真是很方便；本节内容是上节内容的补充；
@@ -177,4 +176,3 @@ result(contactArray);
 
 ```
 
-示例代码点击下载；
