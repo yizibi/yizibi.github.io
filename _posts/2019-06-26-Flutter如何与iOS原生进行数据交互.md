@@ -55,7 +55,7 @@ tags:
 
 我们可以通过设置 Route,来跳转不同的FLutter业务VC；像下面的示例的代码，很简单；
 
-```Java
+```Object-C
 FlutterViewController *flutterVC = [[FlutterViewController alloc] init];
 //设置路由
 [flutterVC setInitialRoute:@"my_friends"];
@@ -71,7 +71,7 @@ FlutterViewController *flutterVC = [[FlutterViewController alloc] init];
 
 FlutterMethodChannel，这个类主要负责Flutter要啥数据，或者以什么样的数据格式给他，都是这个类负责的，而在Flutter内部就需要定义好需要的格式；
 
-```Java
+```Object-C
 FlutterMethodChannel *methodChannel = [FlutterMethodChannel methodChannelWithName:@"methodName" binaryMessenger:messenger];
 [methodChannel setMethodCallHandler:^(FlutterMethodCall * _Nonnull call, FlutterResult  _Nonnull result) {
 if ([call.method isEqualToString:@"userId"]) {
@@ -101,7 +101,7 @@ result(userId);
 
 这个两者数据交互，可以自行封装下，统一调用，以下是我封装的一个示例：
 
-```Java
+```Object-C
 - (void)flutterChennelMethodWithName:(NSString *)methodName binaryMessenger:(NSObject<FlutterBinaryMessenger>*)messenger {
 FlutterMethodChannel *methodChannel = [FlutterMethodChannel methodChannelWithName:methodName binaryMessenger:messenger];
 [methodChannel setMethodCallHandler:^(FlutterMethodCall * _Nonnull call, FlutterResult  _Nonnull result) {
