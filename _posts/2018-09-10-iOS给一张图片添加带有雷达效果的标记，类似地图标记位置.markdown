@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:    "iOS给一张图片添加带有雷达效果的标记，类似地图标记位置"
-subtitle:   "iOS 动效 标记"
+subtitle:   "iOS 动效 标记 图片合成"
 date: 2018-09-10 15:32:24.000000000 +09:00
 author:     "一之笔"
 header-img: "img/home-bg-o.jpg"
