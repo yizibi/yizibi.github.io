@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:    "const,static,extern在开发中的使用"
-subtitle:   "const  static 你了解了吗"
+subtitle:   "const  static 你了解了吗?"
 date: 2016-08-20 15:32:24.000000000 +09:00
 author:     "一之笔"
 header-img: "img/home-bg-o.jpg"

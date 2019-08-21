@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:    "iOS 中的抽屉菜单之MMDrawerController的使用"
-subtitle:   "MMDrawerController"
+subtitle:   "MMDrawerController你都知道吗?"
 date: 2017-04-01 15:32:24.000000000 +09:00
 author:     "一之笔"
 header-img: "img/home-bg-o.jpg"

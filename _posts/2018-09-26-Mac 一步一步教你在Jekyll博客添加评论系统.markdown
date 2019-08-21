@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:    "Mac 一步一步教你在Jekyll博客添加评论系统"
-subtitle:   "你的博客有评论系统吗"
+subtitle:   "你的博客有评论系统吗?"
 date: 2018-09-26 09:32:24.000000000 +09:00
 author:     "一之笔"
 header-img: "img/home-bg-o.jpg"
