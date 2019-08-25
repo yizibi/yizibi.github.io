@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:    "和你聊聊加密那些事儿"
-subtitle:   "你的数据传输安全吗"
+subtitle:   "你的数据传输安全吗?"
 date: 2017-09-25 15:32:24.000000000 +09:00
 author:     "一之笔"
 header-img: "img/home-bg-o.jpg"
