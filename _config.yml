@@ -3,7 +3,7 @@ title: 一之笔
 SEOTitle: 一之笔的博客 | Yizibi Blog
 header-img: img/home-bg.jpg
 email: liluxinios@gmail.com
-description: "iOS 开发 | liluxin，iOS & Photography Lover，Software Engineer，Entrepreneur | 这里是 一之笔 @Yizibbi liluxin 的个人博客， 生活需要仪式感，💪。"
+description: "技术应用 | liluxin，iOS & Photography Lover，Software Engineer，Entrepreneur | 这里是 一之笔 @Yizibbi liluxin 的个人博客， 生活需要仪式感，💪。"
 keyword: "liluxin, Yizibi,yizibi,一之笔的博客,一之笔,一支笔, iOS, @yizibi, @yizibi的博客, 博客, 个人网站, 互联网"
 url: "https://yizibi.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -113,6 +113,10 @@ page-mathjax: false
 
 # Friends
 friends: [
+    {
+	title: "道生化工",
+	href: "https://www.6chemical.com/"
+    },
     {
 	title: "Junhua's Blog",
 	href: "https://blog.searchinfogo.com"
