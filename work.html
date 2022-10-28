@@ -6,473 +6,569 @@ header-img: "img/tag-bg.jpg"
 ---
 
 <!-- Page Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading" id="tag-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <span class="subheading">{{ page.description }}</span>
-                </div>
-            </div>
+<header
+  class="intro-header"
+  style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="site-heading" id="tag-heading">
+          <h1>
+            {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{%
+            endif %}
+          </h1>
+          <span class="subheading">{{ page.description }}</span>
         </div>
+      </div>
     </div>
+  </div>
 </header>
 
 <!--   18年10月之后更改  -->
 
 <div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <!-- 归档列表 -->
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2017">
-                    <span class="tag-text">2019</span>
-                </span>
-                <ul>   
-                    <li >
-                    10-21
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="https://yizibi.github.io/2019/10/21/iOS-Flutter%E6%A8%A1%E5%9D%97%E6%8F%90%E4%BA%A4ipa-Error-90087,90209,90125/" style="color: #0085a1">
-                        <span>
-                            iOS Flutter模块提交ipa Error 90087,90209,90125
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                    10-15
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="https://yizibi.github.io/2019/10/15/Git-%E9%87%8D%E5%86%99%E6%8F%90%E4%BA%A4message/" style="color: #0085a1">
-                        <span>
-                            Git-修改提交message
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                    09-04
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="https://yizibi.github.io/2019/09/04/%E8%A7%84%E8%8C%83%E6%9D%82%E8%B0%88/" style="color: #0085a1">
-                        <span>
-                            规范杂谈
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                    08-30
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="https://yizibi.github.io/2019/08/30/(%E5%B9%B2%E8%B4%A7%E5%88%86%E4%BA%AB)%E5%A6%82%E4%BD%95%E5%9C%A830min%E5%BF%AB%E9%80%9F%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6/" style="color: #0085a1">
-                        <span>
-                            (干货分享)如何在30min快速阅读一本书
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-					<li >
-                    07-26
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="https://yizibi.github.io/2019/07/26/iOS-UIView%E8%8C%83%E5%9B%B4%E5%A4%96%E5%93%8D%E5%BA%94%E7%82%B9%E5%87%BB/" style="color: #0085a1">
-                        <span>
-							iOS UIView范围外响应点击
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                	</li>
-                    <li >
-                    06-25
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="https://yizibi.github.io/2019/06/25/Flutter%E5%A6%82%E4%BD%95%E4%B8%8EiOS%E5%8E%9F%E7%94%9F%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E4%BA%A4%E4%BA%92/" style="color: #0085a1">
-                        <span>
-                            Flutter如何与iOS原生进行数据交互
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                	</li>
-                    <li >
-                        05-16
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2019/05/16/%E5%85%8D%E8%B4%B9%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-%E6%97%A0%E9%9C%80%E9%85%8D%E7%BD%AEVPS-%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB-%E4%B8%80%E9%94%AE%E4%B8%8A%E7%BD%91(%E6%94%B6%E8%97%8F)/" style="color: #0085a1">
-                            <span>
-                               免费科学上网，无需配置VPS，资源分享，一键上网(收藏)
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                        05-10
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2019/05/10/%E5%A6%82%E4%BD%95%E7%94%A8Pod%E9%9B%86%E6%88%90Flutter/" style="color: #0085a1">
-                            <span>
-                                如何用Pod集成Flutter
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                        05-05
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2019/05/05/iOS-AFN-3.x-Cookie%E7%9A%84%E7%AE%A1%E7%90%86(%E6%9C%80%E6%96%B0)/" style="color: #0085a1">
-                            <span>
-                                iOS AFN 3.x Cookie的管理(最新)
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                        04-25
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2019/04/25/iOS-Websocket%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" style="color: #0085a1">
-                            <span>
-                                iOS-Websocket使用指南
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                        03-10
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2019/03/10/iOS-MQTT-%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/" style="color: #0085a1">
-                            <span>
-                                iOS MQTT 使用详解
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                        03-01
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2019/03/01/%E7%89%B9%E5%88%AB%E7%9A%84%E4%B8%80%E5%A4%A9/" style="color: #0085a1">
-                            <span>
-                                特别的一天
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                        02-20
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2019/02/20/AFN%E8%A1%A8%E5%8D%95%E4%B8%8A%E4%BC%A0/" style="color: #0085a1">
-                            <span>
-                                iOS中AFN表单提交
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <!-- 归档列表 -->
 
-      
-                </ul>
-            </div>
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2018">
-                    <span class="tag-text">2018</span>
-                </span>
-                <ul>
-                    <li >
-                        11-13
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/11/13/38%E5%85%AC%E9%87%8C%E7%9A%84%E4%B8%80%E6%AC%A1%E6%8C%91%E6%88%98/" style="color: #0085a1">
-                            <span>
-                                38公里的一次挑战
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                        11-01
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/11/01/Mac%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA(%E9%99%84%E5%B8%A6%E8%B5%84%E6%BA%90)/" style="color: #0085a1">
-                            <span>
-                                Mac 安装虚拟机(附带资源)
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                        10-24
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/10/24/%E8%B6%85%E8%AF%A6%E7%BB%86%E5%9B%BE%E6%96%87%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BAVPS,VPN%E9%85%8D%E7%BD%AE/" style="color: #0085a1">
-                            <span>
-                                超详细图文免费搭建VPS,VPN配置
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                        10-18
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/10/18/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E7%88%B1%E5%BF%83%E6%95%88%E6%9E%9C/" style="color: #0085a1">
-                            <span>
-                                个人博客中添加点击爱心效果
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                        10-15
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/10/15/jekyll%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E6%8F%92%E4%BB%B6/" style="color: #0085a1">
-                            <span>
-                                jekyll个人博客中添加音乐播放插件
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    
-                    <li >
-                        10-13
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/10/13/%E5%92%8C%E4%BD%A0%E8%B5%B0%E8%BF%87%E8%A5%BF%E5%AE%89%E7%9A%84%E9%82%A3%E4%BA%9B%E5%9C%B0%E6%96%B9/" style="color: #0085a1">
-                            <span>
-                                和你走过西安的那些地方
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    
-                    
-                    <li >
-                        10-10
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/10/10/%E5%86%99%E5%AE%8C%E4%BB%A3%E7%A0%81%E5%8E%BB%E6%97%85%E8%A1%8Cmarkdown/" style="color: #0085a1">
-                            <span>
-                                写完代码去旅行
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    
-                    <li >
-                        09-26
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/09/26/Mac-%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E6%95%99%E4%BD%A0%E5%9C%A8Jekyll%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/" style="color: #0085a1">
-                            <span>
-                                Mac 一步一步教你在Jekyll博客添加评论系统
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    
-                    <li >
-                        09-10
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/09/10/iOS%E7%BB%99%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87%E6%B7%BB%E5%8A%A0%E5%B8%A6%E6%9C%89%E9%9B%B7%E8%BE%BE%E6%95%88%E6%9E%9C%E7%9A%84%E6%A0%87%E8%AE%B0-%E7%B1%BB%E4%BC%BC%E5%9C%B0%E5%9B%BE%E6%A0%87%E8%AE%B0%E4%BD%8D%E7%BD%AE/" style="color: #0085a1">
-                            <span>
-                                iOS给一张图片添加带有雷达效果的标记，类似地图标记位置
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    
-                    <li >
-                        08-24
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/08/14/RabbitMQ%E5%9C%A8iOS%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/" style="color: #0085a1">
-                            <span>
-                                RabbitMQ在iOS中的应用
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    
-                    <li >
-                        07-15
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/07/15/Mac-%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%E6%A0%91%E7%BB%93%E6%9E%84/" style="color: #0085a1">
-                            <span>
-                                Mac 生成目录树结构
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    
-                    <li >
-                        06-10
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2018/06/10/Mac-APP%E6%95%B0%E6%8D%AE%E6%8A%93%E5%8C%85%E7%A5%9E%E5%99%A8-Charles-%E7%A0%B4%E8%A7%A3%E7%89%88%E5%8F%8A%E4%BD%BF%E7%94%A8/" style="color: #0085a1">
-                            <span>
-                                Mac APP数据抓包神器 Charles 破解版及使用
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    
-                </ul>
-            </div>
-            
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2017">
-                    <span class="tag-text">2017</span>
-                </span>
-                <ul>
-                    
-                    <li >
-                        09-25
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2017/09/25/%E5%92%8C%E4%BD%A0%E8%81%8A%E8%81%8A%E5%8A%A0%E5%AF%86%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/" style="color: #0085a1">
-                            <span>
-                                和你聊聊加密那些事儿
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    
-                    <li >
-                        06-10
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2017/06/10/%E5%86%99%E5%9C%A8%E5%88%9B%E4%B8%9A%E5%85%AC%E5%8F%B8%E7%9A%84%E9%82%A3%E4%B8%80%E5%B9%B4/" style="color: #0085a1">
-                            <span>
-                                写在创业公司的那一年
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    
-                    <li >
-                        05-15
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2017/05/15/github-SSH%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%96%B0%E8%B4%A1%E7%8C%AE%E5%80%BC/" style="color: #0085a1">
-                            <span>
-                                github SSH配置更新贡献值
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                    <li >
-                        04-01
-                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                        <a href="https://yizibi.github.io/2017/04/01/iOS-%E4%B8%AD%E7%9A%84%E6%8A%BD%E5%B1%89%E8%8F%9C%E5%8D%95%E4%B9%8BMMDrawerController%E7%9A%84%E4%BD%BF%E7%94%A8/" style="color: #0085a1">
-                            <span>
-                                iOS 中的抽屉菜单之MMDrawerController的使用
-                            </span>
-                        </a>
-                        <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2016">
-                    <span class="tag-text">2016</span>
-                </span>
-                <ul>
-                   <li >
-                       12-12
-                       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                       <a href="https://yizibi.github.io/2016/12/12/iOS%E4%B8%AD%E5%9B%BE%E7%89%87%E7%9A%84%E5%9C%86%E8%A7%92%E8%AE%BE%E7%BD%AE/" style="color: #0085a1">
-                           <span>
-                               iOS中图片的圆角设置
-                           </span>
-                       </a>
-                       <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                   </li>
-                   <li >
-                       10-20
-                       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                       <a href="https://yizibi.github.io/2016/10/20/iOS%E4%B9%8Bruntime%E5%88%9D%E6%8E%A2/" style="color: #0085a1">
-                           <span>
-                               iOS之runtime初探
-                           </span>
-                       </a>
-                       <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                   </li>
-                   <li >
-                       09-14
-                       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                       <a href="https://yizibi.github.io/2016/09/14/%E8%8E%B7%E5%8F%96iOS%E8%AE%BE%E5%A4%87IP%E5%9C%B0%E5%9D%80/" style="color: #0085a1">
-                           <span>
-                               获取iOS设备ip地址
-                           </span>
-                       </a>
-                       <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                   </li>
-                   <li >
-                       08-20
-                       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                       <a href="https://yizibi.github.io/2016/08/20/const,static,extern%E5%9C%A8%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/" style="color: #0085a1">
-                           <span>
-                               const,static,extern在开发中的使用
-                           </span>
-                       </a>
-                       <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                   </li>
-                   <li >
-                       07-25
-                       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                       <a href="https://yizibi.github.io/2016/07/25/Mac%E7%A7%91%E5%AD%A6%E6%90%AD%E5%BB%BAVPN,%E7%BB%BF%E8%89%B2%E4%B8%8A%E7%BD%91/" style="color: #0085a1">
-                           <span>
-                               Mac环境一站式搭建VPN,绿色上网一
-                           </span>
-                       </a>
-                       <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                   </li>
-                   <li >
-                       05-25
-                       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                       <a href="https://yizibi.github.io/2016/05/25/AFNetworking-%E6%8A%A5%E9%94%99384" style="color: #0085a1">
-                           <span>
-                               AFNetworking 报错3840...
-                           </span>
-                       </a>
-                       <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                   </li>
-                   <li >
-                       03-30
-                       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                       <a href="https://yizibi.github.io/2016/03/30/%E8%AE%BE%E7%BD%AEtextView%E8%A1%8C%E9%97%B4%E8%B7%9D%E5%8F%8A%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F/" style="color: #0085a1">
-                           <span>
-                               iOS 设置textView的行间距及字体大小
-                           </span>
-                       </a>
-                       <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                   </li>
-                   <li >
-                       03-30
-                       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                       <a href="https://yizibi.github.io/2016/03/16/OC%E4%B8%AD%E7%9A%84%E5%AE%9A%E6%97%B6%E5%99%A8/" style="color: #0085a1">
-                           <span>
-                               OC-定时器初探
-                           </span>
-                       </a>
-                       <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                   </li>
-                   <li >
-                       02-18
-                       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                       <a href="https://yizibi.github.io/2016/02/18/%E5%88%87%E5%9B%BE%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/" style="color: #0085a1">
-                           <span>
-                               切图命名规范
-                           </span>
-                       </a>
-                       <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                   </li>
-                   <li >
-                       02-15
-                       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                       <a href="https://yizibi.github.io/2016/02/15/x-code%E6%8F%92%E4%BB%B6%E5%A4%B1%E6%95%88%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" style="color: #0085a1">
-                           <span>
-                               x-code插件失效解决办法
-                           </span>
-                       </a>
-                       <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                   </li>
-                   <li >
-                       01-16
-                       <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                       <a href="https://yizibi.github.io/2016/01/16/AFNetworking%E6%8A%A5%E9%94%99415/" style="color: #0085a1">
-                           <span>
-                               AFNetworking报错:(415...)
-                           </span>
-                       </a>
-                       <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                   </li>
-                </ul>
-            </div>
-        
-        </div>
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2017">
+          <span class="tag-text">2022</span>
+        </span>
+        <ul>
+          <li>
+            10-24
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2022/10/24/%E5%A4%A7%E9%9D%A2%E7%A7%AF%E5%88%B6%E5%A4%87%E9%92%99%E9%92%9B%E7%9F%BF%E8%96%84%E8%86%9C%E5%A4%AA%E9%98%B3%E8%83%BD%E7%94%B5%E6%B1%A0%E5%B7%A5%E8%89%BA/"
+              style="color: #0085a1"
+            >
+              <span> 大面积制备钙钛矿薄膜太阳能电池工艺 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            10-16
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2022/10/16/%E9%9B%B6%E5%9F%BA%E7%A1%80%E4%B8%80%E6%96%87%E7%9C%8B%E6%87%82%E5%85%89%E4%B8%8E%E5%85%89%E5%82%AC%E5%8C%96-%E9%99%95%E8%A5%BF%E6%AF%85%E6%9D%B0/"
+              style="color: #0085a1"
+            >
+              <span> 零基础一文看懂光与光催化-陕西毅杰 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            09-23
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2022/09/23/%E5%A1%91%E6%96%99%E8%80%81%E5%8C%96%E7%9F%A5%E5%A4%9A%E5%B0%91-%E9%99%95%E8%A5%BF%E6%AF%85%E6%9D%B0%E5%91%8A%E8%AF%89%E4%BD%A0/"
+              style="color: #0085a1"
+            >
+              <span> 塑料老化知多少，陕西毅杰告诉你 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            02-28
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2022/02/28/%E9%99%95%E8%A5%BF%E6%AF%85%E6%9D%B0%E4%B8%80%E6%96%87%E5%B8%A6%E4%BD%A0%E8%A7%A3%E6%9E%90%E5%85%89%E4%B8%8E%E5%85%89%E5%82%AC%E5%8C%96/"
+              style="color: #0085a1"
+            >
+              <span> 陕西毅杰一文带你解析光与光催化 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+        </ul>
+      </div>
+
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2017">
+          <span class="tag-text">2019</span>
+        </span>
+        <ul>
+          <li>
+            10-21
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/10/21/iOS-Flutter%E6%A8%A1%E5%9D%97%E6%8F%90%E4%BA%A4ipa-Error-90087,90209,90125/"
+              style="color: #0085a1"
+            >
+              <span> iOS Flutter模块提交ipa Error 90087,90209,90125 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            10-15
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/10/15/Git-%E9%87%8D%E5%86%99%E6%8F%90%E4%BA%A4message/"
+              style="color: #0085a1"
+            >
+              <span> Git-修改提交message </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            09-04
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/09/04/%E8%A7%84%E8%8C%83%E6%9D%82%E8%B0%88/"
+              style="color: #0085a1"
+            >
+              <span> 规范杂谈 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            08-30
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/08/30/(%E5%B9%B2%E8%B4%A7%E5%88%86%E4%BA%AB)%E5%A6%82%E4%BD%95%E5%9C%A830min%E5%BF%AB%E9%80%9F%E9%98%85%E8%AF%BB%E4%B8%80%E6%9C%AC%E4%B9%A6/"
+              style="color: #0085a1"
+            >
+              <span> (干货分享)如何在30min快速阅读一本书 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            07-26
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/07/26/iOS-UIView%E8%8C%83%E5%9B%B4%E5%A4%96%E5%93%8D%E5%BA%94%E7%82%B9%E5%87%BB/"
+              style="color: #0085a1"
+            >
+              <span> iOS UIView范围外响应点击 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            06-25
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/06/25/Flutter%E5%A6%82%E4%BD%95%E4%B8%8EiOS%E5%8E%9F%E7%94%9F%E8%BF%9B%E8%A1%8C%E6%95%B0%E6%8D%AE%E4%BA%A4%E4%BA%92/"
+              style="color: #0085a1"
+            >
+              <span> Flutter如何与iOS原生进行数据交互 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            05-16
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/05/16/%E5%85%8D%E8%B4%B9%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-%E6%97%A0%E9%9C%80%E9%85%8D%E7%BD%AEVPS-%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB-%E4%B8%80%E9%94%AE%E4%B8%8A%E7%BD%91(%E6%94%B6%E8%97%8F)/"
+              style="color: #0085a1"
+            >
+              <span> 免费科学上网，无需配置VPS，资源分享，一键上网(收藏) </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            05-10
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/05/10/%E5%A6%82%E4%BD%95%E7%94%A8Pod%E9%9B%86%E6%88%90Flutter/"
+              style="color: #0085a1"
+            >
+              <span> 如何用Pod集成Flutter </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            05-05
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/05/05/iOS-AFN-3.x-Cookie%E7%9A%84%E7%AE%A1%E7%90%86(%E6%9C%80%E6%96%B0)/"
+              style="color: #0085a1"
+            >
+              <span> iOS AFN 3.x Cookie的管理(最新) </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            04-25
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/04/25/iOS-Websocket%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"
+              style="color: #0085a1"
+            >
+              <span> iOS-Websocket使用指南 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            03-10
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/03/10/iOS-MQTT-%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/"
+              style="color: #0085a1"
+            >
+              <span> iOS MQTT 使用详解 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            03-01
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/03/01/%E7%89%B9%E5%88%AB%E7%9A%84%E4%B8%80%E5%A4%A9/"
+              style="color: #0085a1"
+            >
+              <span> 特别的一天 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            02-20
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2019/02/20/AFN%E8%A1%A8%E5%8D%95%E4%B8%8A%E4%BC%A0/"
+              style="color: #0085a1"
+            >
+              <span> iOS中AFN表单提交 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+        </ul>
+      </div>
+
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2018">
+          <span class="tag-text">2018</span>
+        </span>
+        <ul>
+          <li>
+            11-13
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/11/13/38%E5%85%AC%E9%87%8C%E7%9A%84%E4%B8%80%E6%AC%A1%E6%8C%91%E6%88%98/"
+              style="color: #0085a1"
+            >
+              <span> 38公里的一次挑战 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            11-01
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/11/01/Mac%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA(%E9%99%84%E5%B8%A6%E8%B5%84%E6%BA%90)/"
+              style="color: #0085a1"
+            >
+              <span> Mac 安装虚拟机(附带资源) </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            10-24
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/10/24/%E8%B6%85%E8%AF%A6%E7%BB%86%E5%9B%BE%E6%96%87%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BAVPS,VPN%E9%85%8D%E7%BD%AE/"
+              style="color: #0085a1"
+            >
+              <span> 超详细图文免费搭建VPS,VPN配置 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            10-18
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/10/18/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E7%82%B9%E5%87%BB%E7%88%B1%E5%BF%83%E6%95%88%E6%9E%9C/"
+              style="color: #0085a1"
+            >
+              <span> 个人博客中添加点击爱心效果 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            10-15
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/10/15/jekyll%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E6%8F%92%E4%BB%B6/"
+              style="color: #0085a1"
+            >
+              <span> jekyll个人博客中添加音乐播放插件 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            10-13
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/10/13/%E5%92%8C%E4%BD%A0%E8%B5%B0%E8%BF%87%E8%A5%BF%E5%AE%89%E7%9A%84%E9%82%A3%E4%BA%9B%E5%9C%B0%E6%96%B9/"
+              style="color: #0085a1"
+            >
+              <span> 和你走过西安的那些地方 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            10-10
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/10/10/%E5%86%99%E5%AE%8C%E4%BB%A3%E7%A0%81%E5%8E%BB%E6%97%85%E8%A1%8Cmarkdown/"
+              style="color: #0085a1"
+            >
+              <span> 写完代码去旅行 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            09-26
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/09/26/Mac-%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E6%95%99%E4%BD%A0%E5%9C%A8Jekyll%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"
+              style="color: #0085a1"
+            >
+              <span> Mac 一步一步教你在Jekyll博客添加评论系统 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            09-10
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/09/10/iOS%E7%BB%99%E4%B8%80%E5%BC%A0%E5%9B%BE%E7%89%87%E6%B7%BB%E5%8A%A0%E5%B8%A6%E6%9C%89%E9%9B%B7%E8%BE%BE%E6%95%88%E6%9E%9C%E7%9A%84%E6%A0%87%E8%AE%B0-%E7%B1%BB%E4%BC%BC%E5%9C%B0%E5%9B%BE%E6%A0%87%E8%AE%B0%E4%BD%8D%E7%BD%AE/"
+              style="color: #0085a1"
+            >
+              <span>
+                iOS给一张图片添加带有雷达效果的标记，类似地图标记位置
+              </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            08-24
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/08/14/RabbitMQ%E5%9C%A8iOS%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/"
+              style="color: #0085a1"
+            >
+              <span> RabbitMQ在iOS中的应用 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            07-15
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/07/15/Mac-%E7%94%9F%E6%88%90%E7%9B%AE%E5%BD%95%E6%A0%91%E7%BB%93%E6%9E%84/"
+              style="color: #0085a1"
+            >
+              <span> Mac 生成目录树结构 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            06-10
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2018/06/10/Mac-APP%E6%95%B0%E6%8D%AE%E6%8A%93%E5%8C%85%E7%A5%9E%E5%99%A8-Charles-%E7%A0%B4%E8%A7%A3%E7%89%88%E5%8F%8A%E4%BD%BF%E7%94%A8/"
+              style="color: #0085a1"
+            >
+              <span> Mac APP数据抓包神器 Charles 破解版及使用 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+        </ul>
+      </div>
+
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2017">
+          <span class="tag-text">2017</span>
+        </span>
+        <ul>
+          <li>
+            09-25
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2017/09/25/%E5%92%8C%E4%BD%A0%E8%81%8A%E8%81%8A%E5%8A%A0%E5%AF%86%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/"
+              style="color: #0085a1"
+            >
+              <span> 和你聊聊加密那些事儿 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            06-10
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2017/06/10/%E5%86%99%E5%9C%A8%E5%88%9B%E4%B8%9A%E5%85%AC%E5%8F%B8%E7%9A%84%E9%82%A3%E4%B8%80%E5%B9%B4/"
+              style="color: #0085a1"
+            >
+              <span> 写在创业公司的那一年 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+
+          <li>
+            05-15
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2017/05/15/github-SSH%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%96%B0%E8%B4%A1%E7%8C%AE%E5%80%BC/"
+              style="color: #0085a1"
+            >
+              <span> github SSH配置更新贡献值 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            04-01
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2017/04/01/iOS-%E4%B8%AD%E7%9A%84%E6%8A%BD%E5%B1%89%E8%8F%9C%E5%8D%95%E4%B9%8BMMDrawerController%E7%9A%84%E4%BD%BF%E7%94%A8/"
+              style="color: #0085a1"
+            >
+              <span> iOS 中的抽屉菜单之MMDrawerController的使用 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+        </ul>
+      </div>
+
+      <div class="one-tag-list">
+        <span class="fa fa-calendar-times-o listing-seperator" id="2016">
+          <span class="tag-text">2016</span>
+        </span>
+        <ul>
+          <li>
+            12-12
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2016/12/12/iOS%E4%B8%AD%E5%9B%BE%E7%89%87%E7%9A%84%E5%9C%86%E8%A7%92%E8%AE%BE%E7%BD%AE/"
+              style="color: #0085a1"
+            >
+              <span> iOS中图片的圆角设置 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            10-20
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2016/10/20/iOS%E4%B9%8Bruntime%E5%88%9D%E6%8E%A2/"
+              style="color: #0085a1"
+            >
+              <span> iOS之runtime初探 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            09-14
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2016/09/14/%E8%8E%B7%E5%8F%96iOS%E8%AE%BE%E5%A4%87IP%E5%9C%B0%E5%9D%80/"
+              style="color: #0085a1"
+            >
+              <span> 获取iOS设备ip地址 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            08-20
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2016/08/20/const,static,extern%E5%9C%A8%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/"
+              style="color: #0085a1"
+            >
+              <span> const,static,extern在开发中的使用 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            07-25
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2016/07/25/Mac%E7%A7%91%E5%AD%A6%E6%90%AD%E5%BB%BAVPN,%E7%BB%BF%E8%89%B2%E4%B8%8A%E7%BD%91/"
+              style="color: #0085a1"
+            >
+              <span> Mac环境一站式搭建VPN,绿色上网一 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            05-25
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2016/05/25/AFNetworking-%E6%8A%A5%E9%94%99384"
+              style="color: #0085a1"
+            >
+              <span> AFNetworking 报错3840... </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            03-30
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2016/03/30/%E8%AE%BE%E7%BD%AEtextView%E8%A1%8C%E9%97%B4%E8%B7%9D%E5%8F%8A%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F/"
+              style="color: #0085a1"
+            >
+              <span> iOS 设置textView的行间距及字体大小 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            03-30
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2016/03/16/OC%E4%B8%AD%E7%9A%84%E5%AE%9A%E6%97%B6%E5%99%A8/"
+              style="color: #0085a1"
+            >
+              <span> OC-定时器初探 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            02-18
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2016/02/18/%E5%88%87%E5%9B%BE%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/"
+              style="color: #0085a1"
+            >
+              <span> 切图命名规范 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            02-15
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2016/02/15/x-code%E6%8F%92%E4%BB%B6%E5%A4%B1%E6%95%88%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"
+              style="color: #0085a1"
+            >
+              <span> x-code插件失效解决办法 </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          <li>
+            01-16
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a
+              href="https://yizibi.github.io/2016/01/16/AFNetworking%E6%8A%A5%E9%94%99415/"
+              style="color: #0085a1"
+            >
+              <span> AFNetworking报错:(415...) </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>
