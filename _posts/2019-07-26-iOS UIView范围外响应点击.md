@@ -3,7 +3,7 @@ layout:     post
 title:    "iOS UIView范围外响应点击"
 subtitle:   "子控件超出父控件范围,无法响应了"
 date: 2019-07-26 13:32:24.000000000 +09:00
-author:     "一之笔"
+author:     "陕西毅杰"
 header-img: "img/post-bg-afnbiaodantijiao.jpg"
 header-mask: 0.3
 catalog:    true

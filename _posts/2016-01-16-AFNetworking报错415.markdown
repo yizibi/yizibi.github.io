@@ -3,14 +3,14 @@ layout:     post
 title:    "AFNetworking报错:(415...)"
 subtitle:   "AFN 415 Error"
 date: 2016-01-16 15:32:24.000000000 +09:00
-author:     "一之笔"
+author:     "陕西毅杰"
 header-img: "img/home-bg-o.jpg"
 tags:
 - iOS技术
 - AFN
 ---
 
-文章原创如需转载，请注明出处"本文首发于[一之笔](https://yizibi.github.io/)";
+文章原创如需转载，请注明出处"本文首发于[陕西毅杰](https://yizibi.github.io/)";
 
 #### question
 

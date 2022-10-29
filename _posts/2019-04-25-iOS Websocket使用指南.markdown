@@ -11,7 +11,7 @@ tags:
 - TCP/IP
 ---
 
-文章原创如需转载，请注明出处"本文首发于[一之笔](https://yizibi.github.io/)";
+文章原创如需转载，请注明出处"本文首发于[陕西毅杰](https://yizibi.github.io/)";
 
 
 <a name="9k3zok"></a>

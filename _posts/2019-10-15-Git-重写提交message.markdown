@@ -3,7 +3,7 @@ layout:     post
 title:    "Git-修改提交message"
 subtitle:   "git 修改重写commit message"
 date: 2019-10-15 18:32:24.000000000 +09:00
-author:     "一之笔"
+author:     "陕西毅杰"
 header-img: "img/home-bg-o.jpg"
 tags:
 - git

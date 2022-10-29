@@ -3,7 +3,7 @@ layout:     post
 title:    "Flutter如何与iOS原生进行数据交互"
 subtitle:   "优雅的交互,Flutter"
 date: 2019-06-26 08:32:24.000000000 +09:00
-author:     "一之笔"
+author:     "陕西毅杰"
 header-img: "img/post_flutter_0511.jpg"
 header-mask: 0.3
 catalog:    true
@@ -13,7 +13,7 @@ tags:
 - 跨平台
 ---
 
-文章首发整理个人博客,转载参考注明来源[一之笔](https://yizibi.github.io/);
+文章首发整理个人博客,转载参考注明来源[陕西毅杰](https://yizibi.github.io/);
 
 ![](http://yizhibi.6chemical.com/lucyBlog/Flutter%E4%BA%A4%E4%BA%92.png)
 

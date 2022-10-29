@@ -3,7 +3,7 @@ layout:     post
 title:    "切图命名规范"
 subtitle:   "iOS中的切图Name"
 date: 2016-02-18 18:32:24.000000000 +09:00
-author:     "一之笔"
+author:     "陕西毅杰"
 header-img: "img/home-bg-o.jpg"
 tags:
 - iOS技术

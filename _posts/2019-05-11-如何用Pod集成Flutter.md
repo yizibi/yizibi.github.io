@@ -3,7 +3,7 @@ layout:     post
 title:    "如何用Pod集成Flutter"
 subtitle:   "放弃用手动集成Flutter吧,太不方便了"
 date: 2019-05-11 08:32:24.000000000 +09:00
-author:     "一之笔"
+author:     "陕西毅杰"
 header-img: "img/post_flutter_0511.jpg"
 header-mask: 0.3
 catalog:    true
